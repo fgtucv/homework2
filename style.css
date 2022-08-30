@@ -1,10 +1,13 @@
-main {
-    font-family: 'Roboto';
-
+a {
+    text-decoration: none;
 }
 
-.logo {
+ul{
+    list-style: none;
+}
+.nav-logo{
     font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -12,71 +15,69 @@ main {
     color: #2196F3;
 }
 
-.logo2 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-
-.logo3 {
-    position: absolute;
+.nav-link{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: black;
+    color: #212121;    
 }
 
-.logo4 {
-    position: absolute;
-    background: #2F303A;
-}
-
-.logo5 {
-    position: absolute;
+.nav-tel{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #000000;
 }
 
-.logo6 {
-    position: absolute;
+.nav-mail{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
 }
 
-.logo7 {
+.hero-section{
     position: absolute;
+    background: #413e3e;
+}
+
+    
+
+.hero-title{
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
 }
 
-.logo8 {
-    position: absolute;
+.hero-button{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+    
+.benefits-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -87,116 +88,39 @@ main {
     color: #212121;
 }
 
-.logo9 {
-    position: absolute;
+.benefits-text{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 24px; 
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    color: #757575;
 }
 
-.logo10 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+.work-section{
+    background: #E5E5E5;
 }
 
-.logo11 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
-}
-
-.logo15 {
-    position: absolute;
+.work-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 
-.logo12 {
-    position: absolute;
-    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-    mix-blend-mode: normal
-}
-
-.logo13 {
-    position: absolute;
-    background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
-}
-
-.logo14 {
-    position: absolute;
+.work-item{
     background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
-.text1 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+.we-section{
+    background: #F5F4FA;
 }
 
-.text2 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.text3 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.text4 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.logo20 {
-    position: absolute;
+.we-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -207,143 +131,39 @@ main {
     color: #212121;
 }
 
-.logo19 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-
-}
-
-.logo18 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.logo17 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.logo16 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.photo {
-    position: absolute;
-    background: url(4853.jpg);
-    border-radius: 0px;
-}
-
-.photo1 {
-    position: absolute;
-    background: url(5844.jpg);
-    border-radius: 0px;
-}
-
-.photo2 {
-    position: absolute;
-    background: url(16166.jpg);
-    border-radius: 0px;
-}
-
-.photo3 {
-    position: absolute;
+.we-item{
     background: url(2968.jpg);
-    border-radius: 0px;
+    border-radius: 0px;  
 }
 
-.text5 {
-    position: absolute;
-    background: url(4853.jpg);
-    border-radius: 0px;
-}
-
-.text6 {
-    position: absolute;
-    background: url(5844.jpg);
-    border-radius: 0px;
-}
-
-.text7 {
-    position: absolute;
-    background: url(16166.jpg);
-    border-radius: 0px;
-}
-
-.text8 {
-    position: absolute;
-    background: url(2968.jpg);
-    border-radius: 0px;
-}
-
-.new {
-    position: absolute;
-    font-family: 'Raleway';
+.we-name{
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
     letter-spacing: 0.03em;
-    color: #2196F3
+    color: #212121;
 }
 
-.new2 {
-    position: absolute;
+.we-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px letter-spacing: 0.03em;
-    color: #FFFFFF;
-
+    font-size: 16px;
+    line-height: 19px; 
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
-.new3 {
-    position: absolute;
+.nav-addres{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.new4 {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: #FFFFFF;    
 }
