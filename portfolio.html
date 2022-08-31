@@ -6,74 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style/index.css">
 </head>
 
 <body>
-    <header>
+    <!-- голована -->
+    <header class="header-section">
         <nav>
             <ul>
                 <li>
                     <h2>
-                        <nav><a href="/index.html">WebStudio</a></nav>
+                        <a class="nav-logo" href="/index.html">WebStudio</a>
                     </h2>
                 </li>
                 <li>
-                    <a href="/index.html">Головна</a>
+                    <a class="nav-link" href="/index.html">Головна</a>
                 </li>
                 <li>
-                    <a href="/">Портфоліо</a>
+                    <a class="nav-link" href="/">Портфоліо</a>
                 </li>
                 <li>
-                    <a href="/contacts.html">Контакри</a>
+                    <a class="nav-link" href="/contacts.html">Контакри</a>
                 </li>
             </ul>
-            <a href="tel:+3809911111">+38 099 111 11 11</a>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a class="nav-tel" href="tel:+3809911111">+38 099 111 11 11</a>
+            <a class="nav-mail" href="mailto:info@example.com">info@example.com</a>
+        </nav>
     </header>
-    <main>
-        <p>Технокряк</p>
-        </li>
-        <li>
-            <img src="/imegges/img(5).png" alt="Постер New Orlean vs Golden Star">
-            <p>Постер New Orlean vs Golden Star</p>
-        </li>
-        <li>
-            <img src="/imegges/img(6).png" alt="Ресторан Seafood">
-            <p>Ресторан Seafood</p>
-        </li>
-        <li>
-            <img src="/imegges/img(8).png" alt="Проект Prime">
-            <p>Проект Prime</p>
-        </li>
-        <li>
-            <img src="/imegges/img(9).png" alt="Проект Boxes">
-            <p>Проект Boxes</p>
-        </li>
-        <li>
-            <img src="/imegges/img(10).png" alt="Inspiration has no Borders">
-            <p>Inspiration has no Borders</p>
-        </li>
-        <li>
-            <img src="/imegges/img(11).png" alt="">
-            <p>Видавництво Limited Edition</p>
-        </li>
-        <li>
-            <img src="/imegges/img(12).png" alt="Проект LAB">
-            <p>Проект LAB</p>
-        </li>
-        <li>
-            <img src="/imegges/img (13).png" alt="Growing Business">
-            <p>Growing Business</p>
-        </li>
+    <main class="main-section">
+        <button class="main-button" type="button">Усе</button>
+        <button class="main-button" type="button">Веб-сайти</button>
+        <button class="main-button" type="button">Застосунки</button>
+        <button class="main-button" type="button">Дизайн</button>
+        <button class="main-button" type="button">Маркетинг</button>
+        <ul>
+            <li>
+                <img class="main-item" src="/images/img (18).png" alt="Технокряк">
+                <h3 class="main-title">Технокряк</h3>
+                <p class="main-text">Веб-сайт</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (19).png" alt="Постер New Orlean vs Golden Star">
+                <h3 class="main-title">Постер New Orlean vs Golden Star</h3>
+                <p class="main-text">Дизайн</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (20).png" alt="Ресторан Seafood">
+                <h3 class="main-title">Ресторан Seafood</h3>
+                <p class="main-text">Застосунок</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (21).png" alt="Проект Prime">
+                <h3 class="main-title">Проект Prime</h3>
+                <p class="main-text">Маркетинг</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (22).png" alt="Проект Boxes">
+                <h3 class="main-title">Проект Boxes</h3>
+                <p class="main-text">Застосунок</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (23).png" alt="Inspiration has no Borders">
+                <h3 class="main-title">Inspiration has no Borders</h3>
+                <p class="main-text">Веб-сайт</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (24).png" alt="">
+                <h3 class="main-title">Видавництво Limited Edition</h3>
+                <p class="main-text">Дизайн</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (25).png" alt="Проект LAB">
+                <h3 class="main-title">Проект LAB</h3>
+                <p class="main-text">Маркетинг</p>
+            </li>
+            <li>
+                <img class="main-item" src="/images/img (26).png" alt="Growing Business">
+                <h3 class="main-title">Growing Business</h3>
+                <p class="main-text">Застосунок</p>
+            </li>
         </ul>
     </main>
-    <footer>
-        <h2>WebStudio</h2>
+    <footer class="footer-section">
+        <h2 class="footer-title">WebStudio</h2>
         <p>
-        <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
-        </p>
+        <address class="footer-adres">м. Київ, пр-т Лесі Українки, 26</address>
+        <a class="footer-tel" href="mailto:info@example.com">info@example.com</a>
+        <a class="footer-mail" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
     </footer>
 
 </body>

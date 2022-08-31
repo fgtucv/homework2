@@ -2,10 +2,16 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
-.nav-logo{
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.nav-logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -15,29 +21,15 @@ ul{
     color: #2196F3;
 }
 
-.nav-link{
-    font-family: 'Roboto';
-    font-style: normal;
+.nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;    
+    color: #212121;
 }
 
-.nav-tel{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #000000;
-}
-
-.nav-mail{
-    font-family: 'Roboto';
-    font-style: normal;
+.nav-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -45,41 +37,43 @@ ul{
     color: #000000;
 }
 
-.hero-section{
+.nav-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.hero-section {
     position: absolute;
     background: #413e3e;
 }
 
-    
 
-.hero-title{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.hero-button{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 }
-    
-.benefits-title{
-    font-family: 'Roboto';
-    font-style: normal;
+
+.benefits-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -88,23 +82,19 @@ color: #FFFFFF;
     color: #212121;
 }
 
-.benefits-text{
-    font-family: 'Roboto';
-    font-style: normal;
+.benefits-text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
-.work-section{
+.work-section {
     background: #E5E5E5;
 }
 
-.work-title{
-    font-family: 'Roboto';
-    font-style: normal;
+.work-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -112,17 +102,15 @@ color: #FFFFFF;
     color: #212121;
 }
 
-.work-item{
+.work-item {
     background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
-.we-section{
+.we-section {
     background: #F5F4FA;
 }
 
-.we-title{
-    font-family: 'Roboto';
-    font-style: normal;
+.we-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -131,14 +119,12 @@ color: #FFFFFF;
     color: #212121;
 }
 
-.we-item{
+.we-item {
     background: url(2968.jpg);
-    border-radius: 0px;  
+    border-radius: 0px;
 }
 
-.we-name{
-    font-family: 'Roboto';
-    font-style: normal;
+.we-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -147,23 +133,36 @@ color: #FFFFFF;
     color: #212121;
 }
 
-.we-text{
-    font-family: 'Roboto';
-    font-style: normal;
+.we-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px; 
+    line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
-.nav-addres{
-    font-family: 'Roboto';
-    font-style: normal;
+
+.footer-addres {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;    
+    color: #FFFFFF;
+}
+
+.footer-mail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
