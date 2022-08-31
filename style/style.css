@@ -16,7 +16,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19px;
     letter-spacing: 0.03em;
     color: #2196F3;
 }
@@ -24,7 +24,7 @@ body {
 .nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -32,7 +32,7 @@ body {
 .nav-tel {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.02em;
     color: #000000;
 }
@@ -40,7 +40,7 @@ body {
 .nav-mail {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.02em;
     color: #000000;
 }
@@ -55,7 +55,7 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ body {
 .hero-button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -76,7 +76,7 @@ body {
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
@@ -85,7 +85,7 @@ body {
 .benefits-text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71px;
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -97,7 +97,7 @@ body {
 .work-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16px;
     letter-spacing: 0.03em;
     color: #212121;
 }
@@ -113,7 +113,7 @@ body {
 .we-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -127,7 +127,7 @@ body {
 .we-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -136,7 +136,7 @@ body {
 .we-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
@@ -146,7 +146,7 @@ body {
 .footer-addres {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -154,7 +154,7 @@ body {
 .footer-mail {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -162,7 +162,7 @@ body {
 .footer-tel {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
