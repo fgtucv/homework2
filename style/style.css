@@ -165,3 +165,65 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+ul{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid green;
+    list-style: none;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid red;
+    text-decoration: none;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid yellow;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid blue;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid black;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid purple;
+}
+
+address{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid gray;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid gold;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid darkred;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid turquoise;
+}

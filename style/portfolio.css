@@ -113,3 +113,45 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+ul{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid green;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid red;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid blue;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid black;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid gray;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid gold;
+}
+
+address{
+    padding: 0;
+    margin: 0;
+    outline: 2px solid teal;
+}
