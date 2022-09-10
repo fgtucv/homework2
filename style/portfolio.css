@@ -1,53 +1,47 @@
-a {
-    text-decoration: none;
+body{
+font-family: "roboto";
 }
 
-ul {
-    list-style: none;
-}
-
-body {
-    font-family: 'Roboto';
-    font-style: normal;
-}
-
-.header-section {
-    background: #FFFFFF;
-}
-
+/* header */
 .nav-logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-color {
     color: #2196F3;
 }
 
 .nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
 
-.nav-tel {
+.nav-link:hover{
+    color: #2196F3;
+}
+
+.nav-contact {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
 
-.nav-mail {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
-    letter-spacing: 0.02em;
-    color: #757575;
+.nav-contact:hover{
+    color: #2196F3;
 }
+
+/* main */
 
 .main-section {}
 
@@ -56,9 +50,9 @@ body {
     border-radius: 4px;
 }
 
-.main-item {
+/* .main-item {
     background: url(portfolio1.jpg);
-}
+} */
 
 .main-title {
     font-weight: 700;
@@ -76,34 +70,26 @@ body {
     color: #757575;
 }
 
-.footer-section {
-    background: #2F303A;
+footer{
+    background-color: #2F303A;
 }
 
-.footer-title {
+.footer-logo{
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #FFFFFF;
 }
 
-.footer-adres {
+.footer-addres {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-}
-
-.footer-tel {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-mail {
@@ -114,44 +100,10 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid green;
-}
-
-a{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid red;
-}
-
-button{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid blue;
-}
-
-p{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid black;
-}
-
-img{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid gray;
-}
-
-h2{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid gold;
-}
-
-address{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid teal;
+.footer-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
