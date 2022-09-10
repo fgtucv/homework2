@@ -1,16 +1,8 @@
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 body {
     font-family: 'Roboto';
     font-style: normal;
 }
-
+/* header */
 .nav-logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -45,11 +37,10 @@ body {
     color: #000000;
 }
 
+/* section hero */
 .hero-section {
     
 }
-
-
 
 .hero-title {
     font-weight: 900;
@@ -72,6 +63,7 @@ body {
     color: #FFFFFF;
 }
 
+/* benefis */
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -89,6 +81,7 @@ body {
     color: #757575;
 }
 
+/* work */
 .work-section {
     background: #E5E5E5;
 }
@@ -100,11 +93,7 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
 }
-
-.work-item {
-    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
-}
-
+/* we */
 .we-section {
     background: #F5F4FA;
 }
@@ -121,6 +110,7 @@ body {
 .we-item {
     background: url(2968.jpg);
     border-radius: 0px;
+    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
 .we-name {
@@ -141,7 +131,7 @@ body {
     color: #757575;
 }
 
-
+/* footer */
 .footer-addres {
     font-weight: 400;
     font-size: 14px;
@@ -164,66 +154,4 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid green;
-    list-style: none;
-}
-
-a{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid red;
-    text-decoration: none;
-}
-
-button{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid yellow;
-}
-
-p{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid blue;
-}
-
-img{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid black;
-}
-
-h2{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid purple;
-}
-
-address{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid gray;
-}
-
-h3{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid gold;
-}
-
-h1{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid darkred;
-}
-
-section{
-    padding: 0;
-    margin: 0;
-    outline: 2px solid turquoise;
 }
