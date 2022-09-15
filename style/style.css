@@ -3,7 +3,17 @@ body {
     font-style: normal;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* header */
+.header-section {
+    width: 1600px;
+    height: 80px;
+}
+
 .nav-logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -12,10 +22,14 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
+    width: 145px;
+    height: 31px;
+    outline: 2px solid red;
 }
 
 .logo-color {
     color: #2196F3;
+    outline: 2px solid red;
 }
 
 .nav-link {
@@ -24,10 +38,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    outline: 2px solid red;
+    width: 45px;
+    height: 16px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #2196F3;
+    outline: 2px solid red;
 }
 
 .nav-contact {
@@ -36,15 +54,21 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    outline: 2px solid red;
+    width: 135px;
 }
 
-.nav-contact:hover{
+.nav-contact:hover {
     color: #2196F3;
+    outline: 2px solid red;
 }
 
 /* section hero */
 .hero-section {
-
+    background-color: #2F303A;
+    outline: 2px solid red;
+    width: 1600px;
+    height: 600px;
 }
 
 .hero-title {
@@ -55,6 +79,12 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    outline: 2px solid red;
+    width: 696px;
+    /* margin-top: 280px;
+    margin-bottom: 200px; */
+    margin-left: 452px;
+    margin-right: 452px;
 }
 
 .hero-button {
@@ -62,10 +92,26 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    outline: 2px solid red;
+    margin-top: 280px;
+    margin-bottom: 40px;
+    margin-left: 700px;
+    margin-right: 700px;
+    background-color: #2196F3;
+    color: white;
+    border: #2196F3;
+    border-radius: 4px;
 }
 
 /* benefis */
+.benefits-card{
+    margin-left: 30px;    
+}
+
+.benefits-card:nth-child(1){
+    margin-left: 200px;
+}
+
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -73,6 +119,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-top: 94px;
+    margin-bottom: 10px;
+    outline: 2px solid red;
+    width: 270px;
+    height: 16px;
 }
 
 .benefits-text {
@@ -81,11 +132,21 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    outline: 2px solid red;
+    width: 270px;
+    height: 75px;
 }
 
 /* work */
 .work-section {
-    background: #E5E5E5;
+    color: #E5E5E5;
+    outline: 2px solid red;
+    width: 1200px;
+    height: 386px;
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+    margin-top: 94px;
 }
 
 .work-title {
@@ -94,11 +155,32 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #212121;
+    outline: 2px solid red;
+    width: 406px;
+    height: 44px;
+    margin-left: 402px;
+}
+
+.work-item {
+    margin-top: 94px;
+    margin-bottom: 381px;
+    outline: 2px solid red;
+    width: 370px;
+    height: 294px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.work-item:nth-child(3) {
+    margin-left: 1px;
 }
 
 /* we */
 .we-section {
     background: #F5F4FA;
+    outline: 2px solid red;
+    width: 1600px;
+    height: 648px;
 }
 
 .we-title {
@@ -108,12 +190,35 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    outline: 2px solid red;
+    width: 364px;
+    height: 42px;
+    margin-bottom: 94px;
+    margin-right: 668px;
+    margin-left: 668px;
+    margin-top: px;
+}
+
+.we-card {
+    margin-left: 30px;
+    outline: 2px solid red;
+    width: 270px;
+    height: 368px;
+    margin-top: 94px;
+    margin-bottom: 368px;
+}
+
+.we-card:nth-child(1) {
+    margin-left: 215px;
 }
 
 .we-item {
     background: url(2968.jpg);
     border-radius: 0px;
     background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+    outline: 2px solid red;
+    width: 270px;
+    height: 260px;
 }
 
 .we-name {
@@ -123,6 +228,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    outline: 2px solid red;
 }
 
 .we-text {
@@ -132,21 +238,30 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    outline: 2px solid red;
 }
 
 /* footer */
 
-footer{
+footer {
     background-color: #2F303A;
+    outline: 2px solid red;
+    width: 1600px;
+    height: 252px;
 }
 
-.footer-logo{
+.footer-logo {
     font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    outline: 2px solid red;
+    width: 145px;
+    height: 31px;
+    margin-bottom: 60px;
+    margin-left: 215px;
 }
 
 .footer-addres {
@@ -156,6 +271,11 @@ color: #FFFFFF;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    outline: 2px solid red;
+    width: 231px;
+    height: 21px;
+    margin-bottom: 20px;
+    margin-left: 215px;
 }
 
 .footer-mail {
@@ -164,6 +284,9 @@ color: #FFFFFF;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    outline: 2px solid red;
+    margin-bottom: 9px;
+    margin-left: 215px;
 }
 
 .footer-tel {
@@ -172,4 +295,6 @@ color: #FFFFFF;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    outline: 2px solid red;
+    margin-right: 215px;
 }

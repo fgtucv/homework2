@@ -15,13 +15,19 @@
 
 <body>
     <!-- heder -->
-    <header>
+    <header class="header-section">
         <nav>
             <a class="nav-logo" href="/"> <span class="logo-color">Web</span>Studio</a>
             <ul>
-                <li><a class="nav-link" href="/">Головна</a></li>
-                <li><a class="nav-link" href="/portfolio.html">Портфоліо</a></li>
-                <li><a class="nav-link" href="/contacts.html">Контакри</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts.html">Контакри</a>
+                </li>
             </ul>
             <a class="nav-contact" href="tel:+380991111111">+38 099 111 11 11</a>
             <a class="nav-contact" href="mailto:info@example.com">info@example.com</a>
@@ -34,7 +40,6 @@
             <h1 class="hero-title">
                 еФЕКтивні рішення для вашого бізнесу
             </h1>
-
             <button class="hero-button" type="button">Замовити послугу
             </button>
         </section>
@@ -42,37 +47,25 @@
         <section class="benefits-section">
             <h2 hidden>ЧОМУ МИ</h2>
             <ul>
-                <li>
+                <li class="benefits-card">
                     <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="benefits-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                        excepturi
-                        vero, iste velit
-                        modi, maxime quos quidem ut facere repellendus veritatis voluptas vitae? Impedit fugit esse
-                        nobis. Est, distinctio molestiae!</p>
+                    <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        veritatis exercitationem velit magnam iure.</p>
                 </li>
-                <li>
+                <li class="benefits-card">
                     <h3 class="benefits-title">ПунктуальнІсть</h3>
-                    <p class="benefits-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut laborum nulla
-                        adipisci
-                        sint est
-                        obcaecati omnis, neque esse sunt vitae recusandae expedita iusto excepturi ducimus, enim
-                        inventore quod blanditiis magnam?</p>
+                    <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        veritatis exercitationem velit magnam iure.</p>
                 </li>
-                <li>
+                <li class="benefits-card">
                     <h3 class="benefits-title"> ПЛАНУВАННЯ</h3>
-                    <p class="benefits-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae
-                        deserunt
-                        dolorem ab
-                        quae error ad hic aliquid earum maxime, blanditiis sed minima quo cupiditate dicta modi eum
-                        praesentium voluptates.</p>
+                    <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        veritatis exercitationem velit magnam iure.</p>
                 </li>
-                <li>
+                <li class="benefits-card">
                     <h3 class="benefits-title">СУЧАСНІ ТЕхнології</h3>
-                    <p class="benefits-textt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus incidunt
-                        maxime
-                        totam quod
-                        perferendis animi autem laboriosam nesciunt molestias enim temporibus culpa quidem, officiis
-                        dolor a itaque modi et cumque!</p>
+                    <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        veritatis exercitationem velit magnam iure.</p>
                 </li>
             </ul>
         </section>
@@ -80,37 +73,37 @@
         <section class="work-section">
             <h2 class="work-title">Чим ми займаємось</h2>
             <ul>
-                <li class="work-item">
-                    <img src="/images/img(2).png" alt="0">
+                <li>
+                    <img class="work-item" src="/images/img(2).png" alt="0">
                 </li>
-                <li class="work-item">
-                    <img src="/images/img(1).png" alt="1">
+                <li>
+                    <img class="work-item" src="/images/img(1).png" alt="1">
                 </li>
-                <li class="work-item">
-                    <img src="/images/img.png" alt="2">
+                <li>
+                    <img class="work-item" src="/images/img.png" alt="2">
                 </li>
             </ul>
         </section>
         <section class="we-section">
             <h2 class="we-title">Наша команда</h2>
             <ul>
-                <li>
-                    <img class="we-item" src="/images/img(1).jpg" alt="Ігор Дем’яненко">
+                <li class="we-card">
+                    <img class="we-item" src="/images/img.jpg" alt="Ігор Дем’яненко">
                     <h3 class="we-name">Ігор Дем’яненко</h3>
                     <p class="we-text">Product Designer</p>
                 </li>
-                <li>
-                    <img class="we-item" src="/images/img.jpg" alt="Ольга Репіна">
+                <li class="we-card">
+                    <img class="we-item" src="/images/img(3).jpg" alt="Ольга Репіна">
                     <h3 class="we-name">Ольга Репіна</h3>
                     <p class="we-text">Frontend Developer</p>
                 </li>
-                <li>
-                    <img class="we-item" src="/images/img(2).jpg" alt="Микола Тарасов">
+                <li class="we-card">
+                    <img class="we-item" src="/images/img(1).jpg" alt="Микола Тарасов">
                     <h3 class="we-name">Микола Тарасов</h3>
                     <p class="we-text">Marketing</p>
                 </li>
-                <li>
-                    <img class="we-item" src="/images/img(2).png" alt="Михайло Єрмаков">
+                <li class="we-card">
+                    <img class="we-item" src="/images/img(2).jpg" alt="Михайло Єрмаков">
                     <h3 class="we-name">Михайло Єрмаков</h3>
                     <p class="we-text">UI Designer</p>
                 </li>
