@@ -3,11 +3,6 @@ body {
     font-style: normal;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* header */
 .header-section {
     width: 1600px;
@@ -30,6 +25,10 @@ ul {
 .logo-color {
     color: #2196F3;
     outline: 2px solid red;
+}
+
+.nav-item .cntainer{
+    padding-left: 54px;
 }
 
 .nav-link {
@@ -68,23 +67,19 @@ ul {
     background-color: #2F303A;
     outline: 2px solid red;
     width: 1600px;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
     outline: 2px solid red;
-    width: 696px;
-    /* margin-top: 280px;
-    margin-bottom: 200px; */
-    margin-left: 452px;
-    margin-right: 452px;
 }
 
 .hero-button {
@@ -92,25 +87,34 @@ ul {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    outline: 2px solid red;
-    margin-top: 280px;
-    margin-bottom: 40px;
-    margin-left: 700px;
-    margin-right: 700px;
+    /* outline: 2px solid red; */
     background-color: #2196F3;
     color: white;
     border: #2196F3;
     border-radius: 4px;
+    margin-top: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 /* benefis */
-.benefits-card{
-    margin-left: 30px;    
+
+.benefits-section .cntainer{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.benefits-card:nth-child(1){
-    margin-left: 200px;
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.benefits-card{
+    margin-right: 30px;   
+}
+
 
 .benefits-title {
     font-weight: 700;
@@ -119,11 +123,9 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    margin-top: 94px;
     margin-bottom: 10px;
     outline: 2px solid red;
     width: 270px;
-    height: 16px;
 }
 
 .benefits-text {
@@ -140,13 +142,15 @@ ul {
 /* work */
 .work-section {
     color: #E5E5E5;
-    outline: 2px solid red;
-    width: 1200px;
-    height: 386px;
-    margin-left: 215px;
-    margin-right: 215px;
-    margin-bottom: 94px;
-    margin-top: 94px;
+    text-align: center;
+}
+
+.work-section .cntainer{
+    padding-bottom: 92px;
+}
+
+.work-list{
+    display: flex;
 }
 
 .work-title {
@@ -155,32 +159,25 @@ ul {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #212121;
-    outline: 2px solid red;
-    width: 406px;
-    height: 44px;
-    margin-left: 402px;
+    margin-bottom: 50px;
 }
 
 .work-item {
-    margin-top: 94px;
-    margin-bottom: 381px;
-    outline: 2px solid red;
     width: 370px;
-    height: 294px;
     margin-right: 30px;
-    margin-top: 50px;
 }
 
 .work-item:nth-child(3) {
-    margin-left: 1px;
+    margin-left: 0;
 }
 
 /* we */
 .we-section {
     background: #F5F4FA;
-    outline: 2px solid red;
-    width: 1600px;
-    height: 648px;
+}
+
+.we-list{
+    display: flex;
 }
 
 .we-title {
@@ -190,35 +187,20 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    outline: 2px solid red;
-    width: 364px;
-    height: 42px;
-    margin-bottom: 94px;
-    margin-right: 668px;
-    margin-left: 668px;
-    margin-top: px;
 }
 
 .we-card {
     margin-left: 30px;
-    outline: 2px solid red;
     width: 270px;
-    height: 368px;
-    margin-top: 94px;
-    margin-bottom: 368px;
 }
 
-.we-card:nth-child(1) {
+/* .we-card:nth-child(1) {
     margin-left: 215px;
-}
+} */
 
 .we-item {
-    background: url(2968.jpg);
-    border-radius: 0px;
-    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
-    outline: 2px solid red;
     width: 270px;
-    height: 260px;
+    margin-bottom: 20px;
 }
 
 .we-name {
@@ -228,7 +210,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    outline: 2px solid red;
+    margin-bottom: 10px;
 }
 
 .we-text {
@@ -238,16 +220,13 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    outline: 2px solid red;
+    margin-bottom: 30px;
 }
 
 /* footer */
 
 footer {
     background-color: #2F303A;
-    outline: 2px solid red;
-    width: 1600px;
-    height: 252px;
 }
 
 .footer-logo {
@@ -257,11 +236,7 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    outline: 2px solid red;
-    width: 145px;
-    height: 31px;
-    margin-bottom: 60px;
-    margin-left: 215px;
+    margin-bottom: 20px;
 }
 
 .footer-addres {
@@ -271,11 +246,6 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    outline: 2px solid red;
-    width: 231px;
-    height: 21px;
-    margin-bottom: 20px;
-    margin-left: 215px;
 }
 
 .footer-mail {
@@ -284,9 +254,6 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    outline: 2px solid red;
-    margin-bottom: 9px;
-    margin-left: 215px;
 }
 
 .footer-tel {
@@ -295,6 +262,4 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    outline: 2px solid red;
-    margin-right: 215px;
 }

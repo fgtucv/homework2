@@ -48,6 +48,13 @@ font-family: "roboto";
 .main-button {
     background: #F5F4FA;
     border-radius: 4px;
+    color: black;
+    border: 0px;
+}
+
+.main-button:hover{
+    background-color: #2196F3;
+    color: white;
 }
 
 /* .main-item {
