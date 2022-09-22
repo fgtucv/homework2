@@ -19,6 +19,7 @@ body {
     width: 145px;
     height: 31px;
     outline: 2px solid red;
+    display: flex;
 }
 
 .logo-color {
@@ -28,6 +29,10 @@ body {
 
 .nav-item .cntainer{
     padding-left: 54px;
+}
+
+.header-list{
+    display: flex;
 }
 
 .nav-link {
@@ -54,6 +59,8 @@ body {
     color: #757575;
     outline: 2px solid red;
     width: 135px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-contact:hover {
