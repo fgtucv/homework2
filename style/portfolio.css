@@ -1,5 +1,5 @@
-body{
-font-family: "roboto";
+body {
+    font-family: "roboto";
 }
 
 /* header */
@@ -25,7 +25,7 @@ font-family: "roboto";
     color: #212121;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #2196F3;
 }
 
@@ -37,7 +37,7 @@ font-family: "roboto";
     color: #757575;
 }
 
-.nav-contact:hover{
+.nav-contact:hover {
     color: #2196F3;
 }
 
@@ -50,16 +50,65 @@ font-family: "roboto";
     border-radius: 4px;
     color: black;
     border: 0px;
+    padding-left: 24x;
+    padding-right: 23px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 50px;
+    margin-top: 94px;
 }
 
-.main-button:hover{
+.main-button:nth-child(1) {
+    margin-left: 495px;
+}
+
+.main-button:nth-child(5) {
+    margin-right: 494px;
+}
+
+.main-button:hover {
     background-color: #2196F3;
     color: white;
 }
 
-/* .main-item {
+.main-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-card {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+}
+
+.main-card.main-card:nth-child(1) {
+    margin-left: 150px;
+}
+
+.main-card.main-card:nth-child(3) {
+    margin-right: 150px;
+}
+
+.main-card.main-card:nth-child(4) {
+    margin-left: 150px;
+}
+
+.main-card.main-card:nth-child(6) {
+    margin-right: 150px;
+}
+
+.main-card.main-card:nth-child(7) {
+    margin-left: 150px;
+}
+
+.main-card.main-card:nth-child(9) {
+    margin-right: 150px;
+}
+
+.main-item {
     background: url(portfolio1.jpg);
-} */
+}
 
 .main-title {
     font-weight: 700;
@@ -67,6 +116,7 @@ font-family: "roboto";
     line-height: 2px;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-top: 20px;
 }
 
 .main-text {
@@ -75,19 +125,22 @@ font-family: "roboto";
     line-height: 1.85px;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 30px;
 }
 
-footer{
+footer {
     background-color: #2F303A;
 }
 
-.footer-logo{
+.footer-logo {
     font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .footer-addres {
@@ -97,6 +150,7 @@ color: #FFFFFF;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
 }
 
 .footer-mail {
