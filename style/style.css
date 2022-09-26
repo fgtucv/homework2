@@ -4,9 +4,21 @@ body {
 }
 
 /* header */
-.header-section {
+
+.header-section .container {
+    display: flex;
+    align-items: center;
     height: 80px;
 }
+
+/* .header-section {
+    
+} */
+
+.header-navigation {
+    display: flex;
+}
+
 
 .nav-logo {
     font-family: 'Raleway';
@@ -22,17 +34,31 @@ body {
     display: flex;
 }
 
+.nav-list {
+    align-items: center;
+}
+
 .logo-color {
     color: #2196F3;
     outline: 2px solid red;
 }
 
-.nav-item .cntainer{
+.nav-item .container {
     padding-left: 54px;
 }
 
-.header-list{
+.nav-item {
+    margin-left: 55px;
+}
+
+.nav-item:nth-child(1) {
+    margin-left: 0;
+}
+
+.header-list {
     display: flex;
+    margin-left: 93px;
+    align-items: center;
 }
 
 .nav-link {
@@ -68,11 +94,20 @@ body {
     outline: 2px solid red;
 }
 
+.header-contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contact-item:nth-child(2) {
+    margin-left: 50px;
+}
+
 /* section hero */
 .hero-section {
     background-color: #2F303A;
     outline: 2px solid red;
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -107,19 +142,24 @@ body {
 
 /* benefis */
 
-.benefits-section .cntainer{
+.benefits-section .container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.benefits-list{
+.benefits-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.benefits-card{
+.benefits-card {
+    margin-left: 30px;
 }
 
+.benefits-card:nth-child(1) {
+    margin-left: 0;
+}
 
 .benefits-title {
     font-weight: 700;
@@ -150,12 +190,13 @@ body {
     text-align: center;
 }
 
-.work-section .cntainer{
+.work-section .container {
     padding-bottom: 92px;
 }
 
-.work-list{
+.work-list {
     display: flex;
+    justify-content: center;
 }
 
 .work-title {
@@ -169,19 +210,23 @@ body {
 
 .work-item {
     width: 370px;
+    margin-left: 30px;
 }
 
-.work-item:nth-child(3) {
+.work-item:nth-child(1) {
     margin-left: 0;
 }
 
 /* we */
 .we-section {
     background: #F5F4FA;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
-.we-list{
+.we-list {
     display: flex;
+    justify-content: center;
 }
 
 .we-title {
@@ -197,11 +242,15 @@ body {
 .we-card {
     margin-left: 30px;
     width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
+    padding-bottom: 30px;
 }
 
-/* .we-card:nth-child(1) {
-    margin-left: 215px;
-} */
+.we-card:nth-child(1) {
+    margin-left: 0;
+}
 
 .we-item {
     width: 270px;
@@ -225,13 +274,14 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 30px;
 }
 
 /* footer */
 
 footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -241,8 +291,7 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-bottom: 20px;
-    margin-top: 60px;
+    margin-bottom: 20px; 
 }
 
 .footer-addres {
@@ -252,6 +301,10 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.footer-item:nth-child(1){
     margin-bottom: 9px;
 }
 

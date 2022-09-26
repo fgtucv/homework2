@@ -16,8 +16,8 @@
 <body>
     <!-- heder -->
     <header class="header-section">
-        <div class="cntainer">
-            <nav>
+        <div class="container">
+            <nav class="header-navigation">
                 <a class="nav-logo" href="/"> <span class="logo-color">Web</span>Studio</a>
                 <ul class="header-list">
                     <li class="nav-item">
@@ -30,10 +30,16 @@
                         <a class="nav-link" href="./contacts.html">Контакри</a>
                     </li>
                 </ul>
-                <a class="nav-contact" href="tel:+380991111111">+38 099 111 11 11</a>
-                <a class="nav-contact" href="mailto:info@example.com">info@example.com</a>
+            </nav>
+            <ul class="header-contact">
+                <li class="contact-item">
+                    <a class="nav-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+                <li class="contact-item">
+                    <a class="nav-contact" href="mailto:info@example.com">info@example.com</a>
+                </li>
+            </ul>
         </div>
-        </nav>
     </header>
     <!-- main -->
     <main>
@@ -47,7 +53,7 @@
         </section>
         <!-- ЧОМУ МИ -->
         <section class="benefits-section">
-            <div class="cntainer">
+            <div class="container">
                 <h2 hidden>ЧОМУ МИ</h2>
                 <ul class="benefits-list">
                     <li class="benefits-card">
@@ -75,7 +81,7 @@
         </section>
         <!-- Чим ми займаємось -->
         <section class="work-section">
-            <div class="cntainer">
+            <div class="container">
                 <h2 class="work-title">Чим ми займаємось</h2>
                 <ul class="work-list">
                     <li class="work-item">
@@ -92,7 +98,7 @@
         </section>
         <!-- ми -->
         <section class="we-section">
-            <div class="cntainer">
+            <div class="container">
                 <h2 class="we-title">Наша команда</h2>
                 <ul class="we-list">
                     <li class="we-card">
@@ -121,11 +127,17 @@
     </main>
     <!-- footer -->
     <footer>
-        <div class="cntainer">
+        <div class="container">
             <h2 class="footer-logo"><span class="logo-color">Web</span>Studio</h2>
             <address class="footer-addres">м. Київ, пр-т Лесі Українки, 26</address>
-            <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+            <ul>
+                <li class="footer-item">
+                    <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer-item">
+                    <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
