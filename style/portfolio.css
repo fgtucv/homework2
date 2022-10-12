@@ -149,14 +149,14 @@ body {
 
 .main-card {
     width: 370px;
-    height: 404px;
     margin-right: 30px;
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .main-descrition {
-    margin-left: 24px;
+    padding-left: 24px;
 }
 
 .main-card:nth-last-child(-n+3) {

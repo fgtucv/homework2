@@ -111,6 +111,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url(/images/Img\ \(1\).jpg);
 }
 
 .hero-title {
@@ -157,8 +158,38 @@ body {
     margin-left: 30px;
 }
 
+.benefits-card::before {
+    content: "";
+    width: 66.99px;
+    height: 70px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/Rectangle\ 4.png);
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
 .benefits-card:nth-child(1) {
     margin-left: 0;
+}
+
+.benefits-card:nth-child(1):before {
+    background-image: url(/images/Group.jpg);
+}
+
+.benefits-card:nth-child(2)::before {
+    background-image: url(/images/Vector.jpg);
+}
+
+.benefits-card:nth-child(3):before {
+    background-image: url(/images/Vector\ \(1\).png);
+}
+
+.benefits-card:nth-child(4):before {
+    background-image: url(/images/Group.png);
 }
 
 .benefits-title {
@@ -291,7 +322,7 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .footer-addres {
@@ -304,7 +335,7 @@ footer {
     margin-bottom: 9px;
 }
 
-.footer-item:nth-child(1){
+.footer-item:nth-child(1) {
     margin-bottom: 9px;
 }
 
