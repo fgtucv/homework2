@@ -30,7 +30,6 @@ body {
     color: #000000;
     width: 145px;
     height: 31px;
-    outline: 2px solid red;
     display: flex;
 }
 
@@ -40,7 +39,6 @@ body {
 
 .logo-color {
     color: #2196F3;
-    outline: 2px solid red;
 }
 
 .nav-item .container {
@@ -67,14 +65,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    outline: 2px solid red;
+
     width: 45px;
     height: 16px;
 }
 
 .nav-link:hover {
     color: #2196F3;
-    outline: 2px solid red;
+
 }
 
 .nav-contact {
@@ -83,7 +81,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    outline: 2px solid red;
+
     width: 135px;
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +89,7 @@ body {
 
 .nav-contact:hover {
     color: #2196F3;
-    outline: 2px solid red;
+
 }
 
 .header-contact {
@@ -107,11 +105,11 @@ body {
 /* section hero */
 .hero-section {
     background-color: #2F303A;
-    outline: 2px solid red;
+
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: url(/images/Img\ \(1\).jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Img\ \(1\).jpg );
 }
 
 .hero-title {
@@ -121,7 +119,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    outline: 2px solid red;
+
 }
 
 .hero-button {
@@ -160,16 +158,13 @@ body {
 
 .benefits-card::before {
     content: "";
-    width: 66.99px;
-    height: 70px;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
+    display: block;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/images/Rectangle\ 4.png);
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     border-radius: 4px;
+    width: 270px;
+    height: 120px;
 }
 
 .benefits-card:nth-child(1) {
@@ -177,19 +172,23 @@ body {
 }
 
 .benefits-card:nth-child(1):before {
-    background-image: url(/images/Group.jpg);
+    background-image: url(/images/antenna.png);
+    background-size: 70px;
 }
 
 .benefits-card:nth-child(2)::before {
-    background-image: url(/images/Vector.jpg);
+    background-image: url(/images/clock.png);
+    background-size: 70px;
 }
 
 .benefits-card:nth-child(3):before {
-    background-image: url(/images/Vector\ \(1\).png);
+    background-image: url(/images/diagram.png);
+    background-size: 70px;
 }
 
 .benefits-card:nth-child(4):before {
-    background-image: url(/images/Group.png);
+    background-image: url(/images/astronaut.png);
+    background-size: 70px;
 }
 
 .benefits-title {
@@ -200,7 +199,6 @@ body {
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 10px;
-    outline: 2px solid red;
     width: 270px;
 }
 
@@ -210,7 +208,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    outline: 2px solid red;
     width: 270px;
     height: 75px;
 }
