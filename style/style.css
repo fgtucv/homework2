@@ -47,6 +47,8 @@ body {
 
 .nav-item {
     margin-left: 55px;
+    height: 16px;
+    width: 142px;
 }
 
 .nav-item:nth-child(1) {
@@ -81,10 +83,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-
-    width: 135px;
-    display: flex;
-    flex-wrap: wrap;
+    height: 16px;
+    fill: #757575;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .nav-contact:hover {
@@ -305,26 +307,37 @@ body {
     margin-bottom: 16px;
 }
 
-.we-icon {
+.socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-item {
     margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+.socials-icon {
     fill: #AFB1B8;
-    padding-left: 32px;
-
-}
-
-.we-icon:nth-child(1) {
-    padding-left: 32px;
-}
-
-.we-icon:hover {
-    border: solid #2196F3 1px;
-    fill: white;
-    background: #2196F3;
-    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     padding-left: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
+}
+
+.socials-item:hover {
+    fill: white;
+    background: #2196F3;
+    border-radius: 50%;
+    /* padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px; */
 }
 
 .customers-section .container {
@@ -407,28 +420,32 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-socials {
+    margin-left: 70px;
+}
+
 .footer-list {
-   display: flex;
+    display: flex;
+    outline: red 2px solid;
 }
 
 .footer-title {
     color: white;
-    margin-left: 156px;
+
 }
 
 .footer-icon {
     fill: white;
-    display: block;
     background: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     padding-left: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
-    border-radius: 30px;
 }
 
-.footer-icon:hover{
-background: #2196F3;
-
+.footer-icon:hover {
+    background: #2196F3;
 }
