@@ -47,8 +47,6 @@ body {
 
 .nav-item {
     margin-left: 55px;
-    height: 16px;
-    width: 142px;
 }
 
 .nav-item:nth-child(1) {
@@ -96,7 +94,13 @@ body {
 }
 
 .contact-icon {
-    fill: currentColor
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .header-contact {
@@ -179,22 +183,22 @@ body {
 }
 
 .benefits-card:nth-child(1):before {
-    background-image: url(/images/antenna.png);
+    background-image: url(../images/antenna.png);
     background-size: 70px;
 }
 
 .benefits-card:nth-child(2)::before {
-    background-image: url(/images/clock.png);
+    background-image: url(../images/clock.png);
     background-size: 70px;
 }
 
 .benefits-card:nth-child(3):before {
-    background-image: url(/images/diagram.png);
+    background-image: url(../images/diagram.png);
     background-size: 70px;
 }
 
 .benefits-card:nth-child(4):before {
-    background-image: url(/images/astronaut.png);
+    background-image: url(../images/astronaut.png);
     background-size: 70px;
 }
 
@@ -247,6 +251,17 @@ body {
 .work-item {
     width: 370px;
     margin-left: 30px;
+    position: relative;
+}
+
+.work-information {
+    color: white;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    padding-bottom: 27px;
+    padding-top: 27px;
+    width: 370px;
+    bottom: 0;
 }
 
 .work-item:nth-child(1) {
@@ -466,11 +481,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.item-socials{
+.item-socials {
     margin-left: 10px;
 }
 
-.item-socials:nth-child(1){
+.item-socials:nth-child(1) {
     margin-left: 0;
 }
 
@@ -481,7 +496,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-link:hover{
+.footer-link:hover {
     background: #2196F3;
 }
 

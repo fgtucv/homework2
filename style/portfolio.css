@@ -29,7 +29,6 @@ body {
     color: #000000;
     width: 145px;
     height: 31px;
-    outline: 2px solid red;
     display: flex;
 }
 
@@ -39,7 +38,6 @@ body {
 
 .logo-color {
     color: #2196F3;
-    outline: 2px solid red;
 }
 
 .nav-item .container {
@@ -66,14 +64,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    outline: 2px solid red;
+
     width: 45px;
     height: 16px;
 }
 
 .nav-link:hover {
     color: #2196F3;
-    outline: 2px solid red;
+
 }
 
 .nav-contact {
@@ -82,15 +80,26 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    outline: 2px solid red;
-    width: 135px;
+    height: 16px;
+    fill: #757575;
+    align-items: center;
+    margin-right: 10px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .nav-contact:hover {
     color: #2196F3;
-    outline: 2px solid red;
+
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .header-contact {
@@ -189,10 +198,15 @@ body {
     margin-top: 30px;
 }
 
+footer .container {
+    display: flex;
+}
+
 footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .footer-logo {
@@ -215,7 +229,7 @@ footer {
     margin-bottom: 9px;
 }
 
-.footer-item {
+.footer-item:nth-child(1) {
     margin-bottom: 9px;
 }
 
@@ -233,4 +247,50 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-socials {
+    margin-left: 70px;
+}
+
+
+
+.footer-list {
+    display: flex;
+}
+
+.footer-title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.item-socials {
+    margin-left: 10px;
+}
+
+.item-socials:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer-link {
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+    background: #2196F3;
+}
+
+.footer-icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-icon:hover {
+    background: #2196F3;
 }
