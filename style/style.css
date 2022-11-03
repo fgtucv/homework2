@@ -163,7 +163,7 @@ body {
     padding-top: 10px;
 }
 
-.hero-modal{
+.hero-modal {
     padding-left: 40px;
 }
 
@@ -204,18 +204,44 @@ body {
     position: absolute;
 }
 
-
+.modal-item {
+    position: relative;
+}
 
 .modal-close-icon {
     width: 18px;
     height: 18px;
 }
 
+.modal-close-icon:hover {
+    fill: #2196F3;
+}
+
 .modal-icon {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 50%;
+    top: 40%;
+    left: 53.3px;
+}
+
+.modal-edit {
+    width: 448px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.modal-edit:hover {
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.modal-item:hover .modal-icon {
+    fill: #2196F3;
 }
 
 .modal-text {
@@ -228,17 +254,26 @@ body {
     color: #757575;
 }
 
-.modal-item {
-    position: relative;
+.com-ttitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    text-align: left;
+    padding-left: 41px;
+    margin-bottom: 4px;
 }
 
-.modal-edit {
-    width: 448px;
-    height: 40px;
-    box-sizing: border-box;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 10px;
+.com-instruc {
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    top: 313px;
+    left: 57px;
 }
 
 .com-edit {
@@ -249,6 +284,16 @@ body {
     border-radius: 4px;
 }
 
+.com-edit:hover .com-instruc {
+    color: #2196F3;
+}
+
+.com-edit:hover{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .com-check {
     display: flex;
     background: #212121;
@@ -257,27 +302,6 @@ body {
     position: absolute;
     left: 52px;
     margin-top: 24px;
-}
-
-.com-ttitle {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: #757575;
-    text-align: left;
-    padding-left: 41px;
-}
-
-.com-instruc {
-    position: absolute;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    color: #757575;
-    top: 309px;
-    left: 57px;
 }
 
 .com-conditions {
