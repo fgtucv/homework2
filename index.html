@@ -66,7 +66,7 @@
                 <button class="hero-button" type="button" data-open-modal>Замовити послугу
                 </button>
                 <div class="hero-modal is-hidden" data-backdrop>
-                    <div class="hero-modal-block">
+                    <form class="hero-modal-block">
                         <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
                         <button data-close-modal class="modal-close" type="button">
                             <svg class="modal-close-icon">
@@ -77,13 +77,13 @@
                         </button>
                         <ul class="modal-list">
                             <li class="modal-item">
-                                <h3 class="modal-text">Ім’я</h3>
+                                <label for="name" class="modal-text">Ім’я</label>
                                 <svg class="modal-icon">
                                     <use href="./symbol-defs.svg#icon-person-black-18dp-1">
 
                                     </use>
                                 </svg>
-                                <input class="modal-edit" type="text">
+                                <input id="name" autofocus required class="modal-edit" type="text">
                             </li>
                             <li class="modal-item">
                                 <h3 class="modal-text">Телефон</h3>
@@ -92,7 +92,7 @@
 
                                     </use>
                                 </svg>
-                                <input class="modal-edit" type="text">
+                                <input required class="modal-edit" type="text">
                             </li>
                             <li class="modal-item">
                                 <h3 class="modal-text">Пошта</h3>
@@ -101,19 +101,19 @@
 
                                     </use>
                                 </svg>
-                                <input class="modal-edit" type="text">
+                                <input required class="modal-edit" type="text">
                             </li>
                         </ul>
                         <div class="modal-com">
-                            <h3 class="com-ttitle">Коментарі</h3>
-                            <p class="com-instruc">Введите текст</p>
-                            <input class="com-edit" type="text">
+                            <label class="com-label" for="com">Коментарі</label>
+                            <textarea required placeholder="Введите текст" class="com-edit" name="com" id="com" cols="30" rows="10"></textarea>
                             <input class="com-check" type="checkbox">
-                            <p class="com-conditions">Погоджуюсь з розсилкою і приймаю <span class="conditions-span">Умови договору</span>
+                            <p class="com-conditions">Погоджуюсь з розсилкою і приймаю <span
+                                    class="conditions-span">Умови договору</span>
                             </p>
-                            <button data-close-modal class="com-send" type="button">Надіслати</button>
+                            <button type="submit" data-close-modal class="com-send" type="button">Надіслати</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -463,6 +463,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-section">
+                <h2 class="subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                <div class="subscribe-block">
+                    <input class="subscribe-edit" autofocus placeholder="E-mail" type="text">
+                    <button class="subscribe-button">
+                        <span class="subscribe-text">Підписатися</span>
+                        <svg class="subscribe-icon">
+                            <use href="./symbol-defs.svg#icon-send">
+
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </footer>
     <script>
@@ -484,6 +498,21 @@
         function logBackdropClick() {
             console.log("Це клік в бекдроп");
         }
+    </script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
     </script>
 </body>
 
