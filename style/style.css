@@ -101,7 +101,11 @@ body {
     color: #212121;
     width: 45px;
     height: 16px;
-    transition: hover 500ms cubic-bezier(.17,.67,.83,.67) 250ms;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -119,6 +123,11 @@ body {
     align-items: center;
     margin-right: 10px;
     display: flex;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .nav-contact:hover {
@@ -192,6 +201,7 @@ body {
 
 .hero-modal {
     padding-left: 40px;
+    transition: opacity 500ms cubic-bezier(.17,.67,.83,.67) 250ms;
 }
 
 
@@ -571,12 +581,22 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .socials-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
     /* padding-left: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -618,6 +638,11 @@ body {
 .customers-item {
     margin-right: 30px;
     color: #757575;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .customers-item:nth-child(6) {
@@ -628,6 +653,11 @@ body {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .customers-icon:hover {
@@ -723,6 +753,11 @@ footer {
     padding: 12px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .footer-link:hover {
@@ -733,6 +768,11 @@ footer {
     fill: #ffffff;
     width: 20px;
     height: 20px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
 }
 
 .footer-icon:hover {
