@@ -17,24 +17,24 @@
     <!-- heder -->
     <header class="header-section">
         <div class="container">
-            <nav class="header-navigation">
-                <a class="nav-logo" href="/"> <span class="logo-color">Web</span>Studio</a>
-                <ul class="header-list">
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="./">Головна</a>
+            <nav class="header-section__nav">
+                <a class="header-section__logo" href="/"> <span class="logo-color">Web</span>Studio</a>
+                <ul class="header-section__list">
+                    <li class="header-section__nav-item">
+                        <a target="_blank" class="header-section__nav-link" href="./">Головна</a>
                     </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="./portfolio.html">Портфоліо</a>
+                    <li class="header-section__nav-item">
+                        <a target="_blank" class="header-section__nav-link" href="./portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="./contacts.html">Контакти</a>
+                    <li class="header-section__nav-item">
+                        <a target="_blank" class="header-section__nav-link" href="./contacts.html">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class="header-contact">
-                <li class="contact-item">
-                    <a target="_blank" class="nav-contact" href="tel:+380991111111">
-                        <svg class="header-icon" width="20px" height="20px">
+                <li class="header-contact__contact-item">
+                    <a target="_blank" class="header-contact__nav" href="tel:+380991111111">
+                        <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-smartphone">
 
                             </use>
@@ -42,9 +42,9 @@
                         <span>+38 099 111 11 11</span>
                     </a>
                 </li>
-                <li class="contact-item">
-                    <a target="_blank" class="nav-contact" href="mailto:info@example.com">
-                        <svg class="header-icon" width="20px" height="20px">
+                <li class="header-contact__contact-item">
+                    <a target="_blank" class="header-contact__nav" href="mailto:info@example.com">
+                        <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-email">
 
                             </use>
@@ -106,7 +106,8 @@
                         </ul>
                         <div class="modal-com">
                             <label class="com-label" for="com">Коментарі</label>
-                            <textarea required placeholder="Введите текст" class="com-edit" name="com" id="com" cols="30" rows="10"></textarea>
+                            <textarea required placeholder="Введите текст" class="com-edit" name="com" id="com"
+                                cols="30" rows="10"></textarea>
                             <input class="com-check" type="checkbox">
                             <p class="com-conditions">Погоджуюсь з розсилкою і приймаю <span
                                     class="conditions-span">Умови договору</span>
@@ -359,46 +360,58 @@
                 <h2 class="customers-title">Постійні клієнти</h2>
                 <ul class="customers-list">
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-1">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-1">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-2">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-2">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-3">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-3">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-4">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-4">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-5">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-5">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-item">
-                        <svg class="customers-icon" height="90px" width="170px">
-                            <use href="./symbol-defs.svg#icon-Client-6">
+                        <a class="customers-link" href="#!">
+                            <svg class="customers-icon" height="90px" width="170px">
+                                <use href="./symbol-defs.svg#icon-Client-6">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>

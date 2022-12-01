@@ -21,12 +21,12 @@ body {
     position: relative;
 }
 
-.header-navigation {
+.header-section__nav {
     display: flex;
 }
 
 
-.nav-logo {
+.header-section__logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -47,21 +47,21 @@ body {
     color: #2196F3;
 }
 
-.nav-item .container {
+.header-section__nav-item .container {
     padding-left: 54px;
 }
 
-.nav-item {
+.header-section__nav-item {
     margin-left: 55px;
     width: 70px;
 }
 
-.nav-item:nth-child(1) {
+.header-section__nav-item:nth-child(1) {
     margin-left: 0;
 }
 
-.nav-item::after {
-    content:"";
+.header-section__nav-item::after {
+    content: "";
     border-bottom: 4px solid #2196F3;
     opacity: 0;
     display: block;
@@ -69,30 +69,30 @@ body {
     bottom: 0;
     width: 74px;
     height: 4px;
-    transition: opacity 500ms cubic-bezier(.17,.67,.83,.67) 250ms;
+    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
 }
 
-.nav-item:nth-child(1)::after{
-    content:"";
+.header-section__nav-item:nth-child(1)::after {
+    content: "";
     width: 59px;
 }
 
-.nav-item:nth-child(3)::after{
+.header-section__nav-item:nth-child(3)::after {
     width: 66px;
 }
 
-.nav-item:hover::after{
-    content:"";
+.header-section__nav-item:hover::after {
+    content: "";
     opacity: 1;
 }
 
-.header-list {
+.header-section__list {
     display: flex;
     margin-left: 93px;
     align-items: center;
 }
 
-.nav-link {
+.header-section__nav-link {
     font-weight: 500;
     display: block;
     font-size: 14px;
@@ -108,11 +108,11 @@ body {
     cursor: pointer;
 }
 
-.nav-link:hover {
+.header-section__nav-link:hover {
     color: #2196F3;
 }
 
-.nav-contact {
+.header-contact__nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -130,16 +130,16 @@ body {
     cursor: pointer;
 }
 
-.nav-contact:hover {
+.header-contact__nav:hover {
     color: #2196F3;
 }
 
-.header-icon {
+.header-contact__icon {
     fill: currentColor;
     margin-right: 10px;
 }
 
-.header-icon:hover .header-contact {
+.header-contact__icon:hover .header-contact {
     fill: #2196F3;
 }
 
@@ -149,7 +149,7 @@ body {
     align-items: center;
 }
 
-.contact-item:nth-child(2) {
+.header-contact__contact-item:nth-child(2) {
     margin-left: 50px;
 }
 
@@ -201,7 +201,7 @@ body {
 
 .hero-modal {
     padding-left: 40px;
-    transition: opacity 500ms cubic-bezier(.17,.67,.83,.67) 250ms;
+    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
 }
 
 
@@ -571,6 +571,18 @@ body {
     margin-right: 10px;
     width: 44px;
     height: 44px;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 250ms linear 250ms, fill 250ms linear 250ms;
+}
+
+.socials-item:hover .socials-icon {
+    fill: white;
+}
+
+.socials-item:hover {
+    background-color: #2196F3;
 }
 
 .socials-link {
@@ -581,39 +593,15 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
-    font: inherit;
-    cursor: pointer;
 }
 
 .socials-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
-    font: inherit;
-    cursor: pointer;
-    /* padding-left: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 12px; */
-}
-
-.socials-item:hover .socials-icon {
-    fill: white;
-}
-
-.socials-item:hover {
-    background: #2196F3;
-    border-radius: 50%;
 }
 
 /* customers */
-
 .customers-section .container {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -643,6 +631,7 @@ body {
     transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
+    transition-timing-function: linear;
 }
 
 .customers-item:nth-child(6) {
@@ -658,6 +647,7 @@ body {
     transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
+    transition: fill 250ms linear 1000ms, border-color 250ms linear 500ms;
 }
 
 .customers-icon:hover {
@@ -809,6 +799,13 @@ footer {
     background: #2F303A;
     padding-left: 15px;
     margin-right: 12px;
+    transition: border 250ms linear 500ms;
+}
+
+.subscribe-edit:hover,
+.subscribe-edit:focus {
+    border: solid 1px #2196F3;
+    cursor: pointer;
 }
 
 .subscribe-button {
