@@ -609,7 +609,7 @@ body {
     justify-content: center;
 }
 
-.customers-title {
+.customers-section__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -619,12 +619,12 @@ body {
     color: #212121;
 }
 
-.customers-list {
+.customers-section__list {
     display: flex;
     justify-content: center;
 }
 
-.customers-item {
+.customers-section__list-item {
     margin-right: 30px;
     color: #757575;
     transition-property: color, background-color;
@@ -633,15 +633,15 @@ body {
     font: inherit;
     cursor: pointer;
     transition-timing-function: linear;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
-.customers-item:nth-child(6) {
+.customers-section__list-item:nth-child(6) {
     margin-right: 0;
 }
 
-.customers-icon {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+.customers-section__link {
     fill: #AFB1B8;
     transition-property: color, background-color;
     transition-duration: 250ms;
@@ -651,25 +651,28 @@ body {
     transition: fill 250ms linear 1000ms, border-color 250ms linear 500ms;
 }
 
-.customers-icon:hover {
+.customers-section__list-item:hover .customers-section__link{
     fill: #2196F3;
+}
+
+.customers-section__list-item:hover {
     border: 1px solid #2196F3;
 }
 
 /* footer */
 
-footer .container {
+.footer-section .container {
     display: flex;
 }
 
-footer {
+.footer-section {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
 }
 
-.footer-logo {
+.footer-section__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -679,7 +682,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-addres {
+.footer-section__addres {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -689,11 +692,11 @@ footer {
     margin-bottom: 9px;
 }
 
-.footer-item:nth-child(1) {
+.footer-section__item:nth-child(1) {
     margin-bottom: 9px;
 }
 
-.footer-mail {
+.footer-section__mail {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -701,7 +704,7 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-tel {
+.footer-section__tel {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -711,17 +714,17 @@ footer {
 
 
 
-.footer-socials {
+.footer-section__footer-socials {
     margin-left: 70px;
 }
 
 
 
-.footer-list {
+.footer-socials__list {
     display: flex;
 }
 
-.footer-title {
+.footer-socials__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -731,15 +734,15 @@ footer {
     margin-bottom: 20px;
 }
 
-.item-socials {
+.footer-socials__item-socials {
     margin-left: 10px;
 }
 
-.item-socials:nth-child(1) {
+.footer-socials__item-socials:nth-child(1) {
     margin-left: 0;
 }
 
-.footer-link {
+.footer-socials__link {
     border-radius: 50%;
     padding: 12px;
     display: flex;
@@ -751,11 +754,11 @@ footer {
     cursor: pointer;
 }
 
-.footer-link:hover {
+.footer-socials__link:hover {
     background: #2196F3;
 }
 
-.footer-icon {
+.footer-socials__icon {
     fill: #ffffff;
     width: 20px;
     height: 20px;
@@ -766,7 +769,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-icon:hover {
+.footer-socials__icon:hover {
     background: #2196F3;
 }
 
@@ -776,7 +779,7 @@ footer {
     margin-left: 93px;
 }
 
-.subscribe-title {
+.subscribe-section__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -786,11 +789,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.subscribe-block {
+.subscribe-section__block {
     display: flex;
 }
 
-.subscribe-edit {
+.subscribe-section__edit {
     border: 1px solid rgba(125, 125, 125, 0.911);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -803,13 +806,13 @@ footer {
     transition: border 250ms linear 500ms;
 }
 
-.subscribe-edit:hover,
-.subscribe-edit:focus {
+.subscribe-section__edit:hover,
+.subscribe-section__edit:focus {
     border: solid 1px #2196F3;
     cursor: pointer;
 }
 
-.subscribe-button {
+.subscribe-section__button {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -822,7 +825,7 @@ footer {
     position: relative;
 }
 
-.subscribe-icon {
+.ssubscribe-section__icon {
     width: 24px;
     height: 24px;
     position: absolute;
@@ -832,7 +835,7 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-.subscribe-text {
+.subscribe-section__text {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
