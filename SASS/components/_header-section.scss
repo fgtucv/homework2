@@ -1,0 +1,131 @@
+.header-section .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header-section {
+    /* width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0; */
+    position: relative;
+}
+
+.header-section__nav {
+    display: flex;
+}
+
+.nav-list {
+    align-items: center;
+}
+
+.header-section__nav-item {
+    margin-left: 55px;
+    position: relative;
+}
+
+.header-section__nav-item:nth-child(1) {
+    margin-left: 0;
+}
+
+.header-section__nav-item::after {
+    content: "";
+    border-bottom: 4px solid #2196F3;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
+}
+
+.header-section__nav-item:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.header-section__nav-link {
+    font-weight: 500;
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
+}
+
+.active-page{
+    background-color: #2196F3;
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.header-section__list {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+}
+
+.header-section__nav-link:hover {
+    color: #2196F3;
+}
+
+.header-contact__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    height: 16px;
+    fill: #757575;
+    align-items: center;
+    margin-right: 10px;
+    display: flex;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
+}
+
+.header-contact__link:hover {
+    color: #2196F3;
+}
+
+.header-contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-contact__icon:hover .header-contact {
+    fill: #2196F3;
+}
+
+.header-contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-contact__contact-item:nth-child(2) {
+    margin-left: 50px;
+}
+
+.contact-nav {
+    position: absolute;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-information {
+    position: relative;
+}

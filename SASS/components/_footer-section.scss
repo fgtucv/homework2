@@ -1,0 +1,133 @@
+/* footer */
+
+.footer-section .container {
+    display: flex;
+}
+
+.footer-section {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.footer-section__addres {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+    margin-top: 20px;
+}
+
+.footer-section__item:nth-child(1) {
+    margin-bottom: 9px;
+}
+
+.footer-section__mail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-section__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-section__footer-socials {
+    margin-left: 70px;
+}
+
+.footer-section__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* subscribe */
+
+.subscribe-section {
+    margin-left: 93px;
+}
+
+.subscribe-section__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.subscribe-section__block {
+    display: flex;
+}
+
+.subscribe-section__edit {
+    border: 1px solid rgba(125, 125, 125, 0.911);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    background: #2F303A;
+    padding-left: 15px;
+    margin-right: 12px;
+    transition: border 250ms linear 500ms;
+}
+
+.subscribe-section__edit:hover,
+.subscribe-section__edit:focus {
+    border: solid 1px #2196F3;
+    cursor: pointer;
+}
+
+.subscribe-section__button {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    align-items: center;
+    display: flex;
+    padding-left: 28px;
+    position: relative;
+}
+
+.subscribe-section__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 18px;
+    top: 26px;
+    bottom: 13px;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe-section__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}

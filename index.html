@@ -8,8 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/index.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <title>WebStudio_UA</title>
 </head>
@@ -19,10 +18,11 @@
     <header class="header-section">
         <div class="container">
             <nav class="header-section__nav">
-                <a class="header-section__logo" href="/"> <span class="logo-color">Web</span>Studio</a>
+                <a class="logo" href="/">Web<span class="logo__color">Studio</span></a>
                 <ul class="header-section__list">
                     <li class="header-section__nav-item">
                         <a target="_blank" class="header-section__nav-link" href="./">Головна</a>
+                        <div class="active-page"></div>
                     </li>
                     <li class="header-section__nav-item">
                         <a target="_blank" class="header-section__nav-link" href="./portfolio.html">Портфоліо</a>
@@ -34,7 +34,7 @@
             </nav>
             <ul class="header-contact">
                 <li class="header-contact__contact-item">
-                    <a target="_blank" class="header-contact__nav" href="tel:+380991111111">
+                    <a target="_blank" class="header-contact__link" href="tel:+380991111111">
                         <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-smartphone">
 
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="header-contact__contact-item">
-                    <a target="_blank" class="header-contact__nav" href="mailto:info@example.com">
+                    <a target="_blank" class="header-contact__link" href="mailto:info@example.com">
                         <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-email">
 
@@ -60,64 +60,62 @@
     <main>
         <!-- ГЕРОЙ -->
         <section class="hero-section">
-            <div class="hero-section__box">
-                <h1 class="hero-section__title">
-                    еФЕКтивні рішення для <br> вашого бізнесу
-                </h1>
-                <button class="hero-section__button" type="button" data-open-modal>Замовити послугу
-                </button>
-                <div class="hero-section__modal is-hidden" data-backdrop>
-                    <form class="hero-modal__block">
-                        <h2 class="hero-modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
-                        <button data-close-modal class="hero-modal__close" type="button">
-                            <svg class="hero-modal__close-icon">
-                                <use href="./symbol-defs.svg#icon-close-black-18dp-2-1">
+            <h1 class="hero-section__title">
+                еФЕКтивні рішення для <br> вашого бізнесу
+            </h1>
+            <button class="hero-section__button" type="button" data-open-modal>Замовити послугу
+            </button>
+            <div class="hero-modal is-hidden" data-backdrop>
+                <form class="hero-modal__block">
+                    <h2 class="hero-modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
+                    <button data-close-modal class="hero-modal__close" type="button">
+                        <svg class="hero-modal__close-icon">
+                            <use href="./symbol-defs.svg#icon-close-black-18dp-2-1">
+
+                            </use>
+                        </svg>
+                    </button>
+                    <ul class="hero-modal__list">
+                        <li class="hero-modal__item">
+                            <label for="name" class="hero-modal__text">Ім’я</label>
+                            <svg class="hero-modal__icon">
+                                <use href="./symbol-defs.svg#icon-person-black-18dp-1">
 
                                 </use>
                             </svg>
-                        </button>
-                        <ul class="hero-modal__list">
-                            <li class="hero-modal__list-item">
-                                <label for="name" class="hero-modal__text">Ім’я</label>
-                                <svg class="hero-modal__icon">
-                                    <use href="./symbol-defs.svg#icon-person-black-18dp-1">
+                            <input id="name" autofocus required class="hero-modal__edit" type="text">
+                        </li>
+                        <li class="hero-modal__item">
+                            <h3 class="hero-modal__text">Телефон</h3>
+                            <svg class="hero-modal__icon">
+                                <use href="./symbol-defs.svg#icon-phone-black-18dp-1">
 
-                                    </use>
-                                </svg>
-                                <input id="name" autofocus required class="hero-modal__edit" type="text">
-                            </li>
-                            <li class="hero-modal__list-item">
-                                <h3 class="hero-modal__text">Телефон</h3>
-                                <svg class="hero-modal__icon">
-                                    <use href="./symbol-defs.svg#icon-phone-black-18dp-1">
+                                </use>
+                            </svg>
+                            <input required class="hero-modal__edit" type="text">
+                        </li>
+                        <li class="hero-modal__item">
+                            <h3 class="hero-modal__text">Пошта</h3>
+                            <svg class="hero-modal__icon">
+                                <use href="./symbol-defs.svg#icon-email-black-18dp-1">
 
-                                    </use>
-                                </svg>
-                                <input required class="hero-modal__edit" type="text">
-                            </li>
-                            <li class="hero-modal__list-item">
-                                <h3 class="hero-modal__text">Пошта</h3>
-                                <svg class="hero-modal__icon">
-                                    <use href="./symbol-defs.svg#icon-email-black-18dp-1">
-
-                                    </use>
-                                </svg>
-                                <input required class="hero-modal__edit" type="text">
-                            </li>
-                        </ul>
-                        <div class="hero-modal__com">
-                            <label class="hero-modal__com-label" for="com">Коментарі</label>
-                            <textarea required placeholder="Введите текст" class="hero-modal__com-edit" name="com"
-                                id="com" cols="30" rows="10"></textarea>
-                            <input class="hero-modal__com-check" type="checkbox">
-                            <p class="hero-modal__com-conditions">Погоджуюсь з розсилкою і приймаю <span
-                                    class="hero-modal__conditions-span">Умови договору</span>
-                            </p>
-                            <button type="submit" data-close-modal class="hero-modal__com-send"
-                                type="button">Надіслати</button>
-                        </div>
-                    </form>
-                </div>
+                                </use>
+                            </svg>
+                            <input required class="hero-modal__edit" type="text">
+                        </li>
+                    </ul>
+                    <div class="hero-modal__com">
+                        <label class="hero-modal__com-label" for="com">Коментарі</label>
+                        <textarea required placeholder="Введите текст" class="hero-modal__com-edit" name="com" id="com"
+                            cols="30" rows="10"></textarea>
+                        <input class="hero-modal__com-check" type="checkbox">
+                        <p class="hero-modal__com-conditions">Погоджуюсь з розсилкою і приймаю <span
+                                class="hero-modal__conditions-span">Умови договору</span>
+                        </p>
+                        <button type="submit" data-close-modal class="hero-modal__com-send"
+                            type="button">Надіслати</button>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- ЧОМУ МИ -->
@@ -181,8 +179,8 @@
                     <li class="we-section__card">
                         <img class="we-section__img" src="./images/employee-igor.jpg" alt="Ігор Дем’яненко">
                         <h3 class="we-section__name">Ігор Дем’яненко</h3>
-                        <p class="we-section__text special-text">Product Designer</p>
-                        <ul class="we-section__socials-list">
+                        <p class="we-section__text">Product Designer</p>
+                        <ul class="socials-list">
                             <li class="socials-list__item">
                                 <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
                                     <svg class="socials-list__icon" width="20px" height="20px">
@@ -227,7 +225,7 @@
                         <img class="we-section__img" src="./images/employee-olga.jpg" alt="Ольга Репіна">
                         <h3 class="we-section__name">Ольга Репіна</h3>
                         <p class="we-section__text">Frontend Developer</p>
-                        <ul class="we-section__socials-list">
+                        <ul class="socials-list">
                             <li class="socials-list__item">
                                 <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
                                     <svg class="socials-list__icon" width="20px" height="20px">
@@ -271,8 +269,8 @@
                     <li class="we-section__card">
                         <img class="we-section__img" src="./images/employee-mucola.jpg" alt="Микола Тарасов">
                         <h3 class="we-section__name">Микола Тарасов</h3>
-                        <p class="we-section__text special-text">Marketing</p>
-                        <ul class="we-section__socials-list">
+                        <p class="we-section__text">Marketing</p>
+                        <ul class="socials-list">
                             <li class="socials-list__item">
                                 <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
                                     <svg class="socials-list__icon" width="20px" height="20px">
@@ -316,8 +314,8 @@
                     <li class="we-section__card">
                         <img class="we-section__img" src="./images/employee-muhaulo.jpg" alt="Михайло Єрмаков">
                         <h3 class="we-section__name">Михайло Єрмаков</h3>
-                        <p class="we-section__text special-text">UI Designer</p>
-                        <ul class="we-section__socials-list">
+                        <p class="we-section__text">UI Designer</p>
+                        <ul class="socials-list">
                             <li class="socials-list__item">
                                 <a target="_blank" class="socials-list__link" href="https://www.instagram.com/">
                                     <svg class="socials-list__icon" width="20px" height="20px">
@@ -366,7 +364,7 @@
             <div class="container">
                 <h2 class="customers-section__title">Постійні клієнти</h2>
                 <ul class="customers-section__list">
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-1">
@@ -375,7 +373,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-2">
@@ -384,7 +382,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-3">
@@ -393,7 +391,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-4">
@@ -402,7 +400,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-5">
@@ -411,7 +409,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-section__list-item">
+                    <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
                                 <use href="./symbol-defs.svg#icon-Client-6">
@@ -428,12 +426,9 @@
     <footer class="footer-section">
         <div class="container">
             <div>
-
+                <a class="logo" href="/">Web<span class="logo__color logo__color--white">Studio</span></a>
+                <address class="footer-section__addres">м. Київ, пр-т Лесі Українки, 26</address>
                 <ul>
-                    <li>
-                        <h2 class="footer-section__logo"><span class="logo-color">Web</span>Studio</h2>
-                        <address class="footer-section__addres">м. Київ, пр-т Лесі Українки, 26</address>
-                    </li>
                     <li class="footer-section__item">
                         <a class="footer-section__mail" href="mailto:info@example.com">info@example.com</a>
                     </li>
@@ -443,43 +438,45 @@
                 </ul>
             </div>
             <div class="footer-section__footer-socials">
-                <h2 class="footer-socials__title">Приєднуйтесь</h2>
-                <ul class="footer-socials__list">
-                    <li class="footer-socials__item-socials">
-                        <a target="_blank" class="footer-socials__link" href="https://www.instagram.com/">
-                            <svg class="footer-socials__icon">
+                <h2 class="footer-section__title">Приєднуйтесь</h2>
+                <ul class="socials-list">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-instagram-2">
 
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-socials__item-socials">
-                        <a target="_blank" class="footer-socials__link" href="https://twitter.co">
-                            <svg class="footer-socials__icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://twitter.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-twitter-1">
 
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-socials__item-socials">
-                        <a target="_blank" class="footer-socials__link" href="https://www.facebook.com/">
-                            <svg class="footer-socials__icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://www.facebook.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-facebook-1">
 
                                 </use>
                             </svg>
                         </a>
+
                     </li>
-                    <li class="footer-socials__item-socials">
-                        <a target="_blank" class="footer-socials__link" href="https://linkedin.com/">
-                            <svg class="footer-socials__icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://linkedin.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-linkedin-1">
 
                                 </use>
                             </svg>
                         </a>
+
                     </li>
                 </ul>
             </div>

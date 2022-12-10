@@ -9,8 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/portfolio.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 </head>
 
@@ -18,24 +17,25 @@
     <!-- голована -->
     <header class="header-section">
         <div class="container">
-            <nav class="header-navigation">
-                <a class="nav-logo" href="/"> <span class="logo-color">Web</span>Studio</a>
-                <ul class="header-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Головна</a>
+            <nav class="header-section__nav">
+                <a class="logo" href="/">Web<span class="logo__color">Studio</span></a>
+                <ul class="header-section__list">
+                    <li class="header-section__nav-item">
+                        <a target="_blank" class="header-section__nav-link" href="./">Головна</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+                    <li class="header-section__nav-item">
+                        <a class="header-section__nav-link" href="./portfolio.html">Портфоліо</a>
+                        <div class="active-page"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacts.html">Контакти</a>
+                    <li class="header-section__nav-item">
+                        <a target="_blank" class="header-section__nav-link" href="./contacts.html">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class="header-contact">
-                <li class="contact-item">
-                    <a class="nav-contact" href="tel:+380991111111">
-                        <svg class="contact-icon" width="20px" height="20px">
+                <li class="header-contact__contact-item">
+                    <a target="_blank" class="header-contact__link" href="tel:+380991111111">
+                        <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-smartphone">
 
                             </use>
@@ -43,9 +43,9 @@
                         <span>+38 099 111 11 11</span>
                     </a>
                 </li>
-                <li class="contact-item">
-                    <a class="nav-contact" href="mailto:info@example.com">
-                        <svg class="contact-icon" width="20px" height="20px">
+                <li class="header-contact__contact-item">
+                    <a target="_blank" class="header-contact__link" href="mailto:info@example.com">
+                        <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-email">
 
                             </use>
@@ -55,7 +55,7 @@
                 </li>
             </ul>
         </div>
-    </header>-
+    </header>
     <main class="main-section">
         <div class="container">
             <ul class="button-list">
@@ -216,63 +216,76 @@
             </ul>
         </div>
     </main>
-    <footer>
+    <footer class="footer-section">
         <div class="container">
             <div>
-
+                <a class="logo" href="/">Web<span class="logo__color logo__color--white">Studio</span></a>
+                <address class="footer-section__addres">м. Київ, пр-т Лесі Українки, 26</address>
                 <ul>
-                    <li>
-                        <h2 class="footer-logo"><span class="logo-color">Web</span>Studio</h2>
-                        <address class="footer-addres">м. Київ, пр-т Лесі Українки, 26</address>
+                    <li class="footer-section__item">
+                        <a class="footer-section__mail" href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li class="footer-item">
-                        <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="footer-section__item">
+                        <a class="footer-section__tel" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-socials">
-                <h2 class="footer-title">Приєднуйтесь</h2>
-                <ul class="footer-list">
-                    <li class="item-socials">
-                        <a class="footer-link" href="https://www.instagram.com/">
-                            <svg class="footer-icon">
+            <div class="footer-section__footer-socials">
+                <h2 class="footer-section__title">Приєднуйтесь</h2>
+                <ul class="socials-list">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-instagram-2">
 
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item-socials">
-                        <a class="footer-link" class="footer-link" href="https://twitter.co">
-                            <svg class="footer-icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://twitter.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-twitter-1">
 
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item-socials">
-                        <a class="footer-link" href="https://www.facebook.com/">
-                            <svg class="footer-icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://www.facebook.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-facebook-1">
 
                                 </use>
                             </svg>
                         </a>
+
                     </li>
-                    <li class="item-socials">
-                        <a class="footer-link" href="https://linkedin.com/">
-                            <svg class="footer-icon">
+                    <li class="socials-list__item socials-list__item--grey">
+                        <a target="_blank" class="socials-list__link" href="https://linkedin.com/">
+                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
                                 <use href="./symbol-defs.svg#icon-linkedin-1">
 
                                 </use>
                             </svg>
                         </a>
+
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe-section">
+                <h2 class="subscribe-section__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                <div class="subscribe-section__block">
+                    <input class="subscribe-section__edit" autofocus placeholder="E-mail" type="text">
+                    <button class="subscribe-section__button">
+                        <span class="subscribe-section__text">Підписатися</span>
+                        <svg class="subscribe-section__icon">
+                            <use href="./symbol-defs.svg#icon-send">
+
+                            </use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

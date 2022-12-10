@@ -1,0 +1,56 @@
+/* customers */
+.customers-section .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
+}
+
+.customers-section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.customers-section__list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers-section__item {
+    margin-right: 30px;
+    color: #757575;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
+    transition-timing-function: linear;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-section__item:nth-child(6) {
+    margin-right: 0;
+}
+
+.customers-section__link {
+    fill: #AFB1B8;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+    font: inherit;
+    cursor: pointer;
+    transition: fill 250ms linear 1000ms, border-color 250ms linear 500ms;
+}
+
+.customers-section__item:hover .customers-section__link {
+    fill: #2196F3;
+}
+
+.customers-section__item:hover {
+    border: 1px solid #2196F3;
+}
