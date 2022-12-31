@@ -11,3 +11,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+button{
+    transition: transform 500ms linear 250ms;
+}
+
+button:hover{
+    transform: scale(1.05);
+}

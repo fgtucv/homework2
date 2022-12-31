@@ -23,9 +23,9 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     /* outline: 2px solid red; */
-    background-color: #2196F3;
+    background-color: $accent;
     color: white;
-    border: #2196F3;
+    border: $accent;
     border-radius: 4px;
     margin-top: 30px;
     padding-left: 24px;
@@ -86,7 +86,7 @@
 }
 
 .hero-modal__close-icon:hover {
-    fill: #2196F3;
+    fill: $accent;
 }
 
 .hero-modal__icon {
@@ -95,6 +95,10 @@
     position: absolute;
     top: 40%;
     left: 53.3px;
+}
+
+.hero-modal__edit:hover + .hero-modal__icon{
+    fill: $accent;
 }
 
 .hero-modal__edit {
@@ -109,12 +113,12 @@
 
 .hero-modal__edit:hover {
     border-radius: 4px;
-    border: 1px solid #2196F3;
+    border: 1px solid $accent;
     border-radius: 4px;
 }
 
 .modal-item:hover .hero-modal__icon {
-    fill: #2196F3;
+    fill: $accent;
 }
 
 .hero-modal__text {
@@ -124,7 +128,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $text-color-accent;
     display: block;
     margin-bottom: 4px;
 }
@@ -134,7 +138,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $text-color-accent;
     text-align: left;
     padding-left: 41px;
     margin-bottom: 4px;
@@ -147,7 +151,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $text-color-accent;
     top: 313px;
     left: 57px;
 }
@@ -164,23 +168,27 @@
 }
 
 .hero-modal__com-edit:hover .com-instruc {
-    color: #2196F3;
+    color: $accent;
 }
 
 .hero-modal__com-edit:hover {
-    border: 1px solid #2196F3;
+    border: 1px solid $accent;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 .hero-modal__com-check {
     display: flex;
-    background: #212121;
+    background: $text-color;
     width: 16px;
     height: 15px;
     position: absolute;
     left: 52px;
     margin-top: 24px;
+    // appearance: none;
+    // -moz-appearance:none;
+    // -webkit-appearance: none;
+    position: absolute;
 }
 
 .hero-modal__com-conditions {
@@ -190,11 +198,11 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $text-color-accent;
 }
 
 .hero-modal__conditions-span {
-    color: #2196F3;
+    color: $accent;
 }
 
 .is-hidden {
@@ -205,7 +213,7 @@
 .hero-modal__com-send {
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    background: $accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -217,6 +225,21 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
+// .hero-modal__custom-check{
+//     background-color: $text-color;
+//     border: 1px white solid;
+//     display: inline-block;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 5px;
+// }
+
+// .hero-modal__com-check:checked + .hero-modal__custom-check{
+//     background-color: #00b0f6;
+//     background-size: 20px;
+//     background-image: url(..);
+// }
 
 /* script */
 

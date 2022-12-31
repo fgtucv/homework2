@@ -11,7 +11,7 @@
     font: inherit;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 250ms linear 250ms, fill 250ms linear 250ms;
+    transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
 }
 
 .socials-list__item--grey {
@@ -19,7 +19,7 @@
 }
 
 .socials-list__item:hover .socials-list__icon {
-    fill: white;
+    fill: rgb(255, 255, 255);
 }
 
 .socials-list__item:hover {

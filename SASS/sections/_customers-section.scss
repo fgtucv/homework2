@@ -12,7 +12,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $text-color;
 }
 
 .customers-section__list {
@@ -22,15 +22,20 @@
 
 .customers-section__item {
     margin-right: 30px;
-    color: #757575;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
+    color: $text-color-accent;
+    // transition-property: color, background-color;
+    // transition-duration: 250ms;
+    // transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
     transition-timing-function: linear;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: transform 500ms linear 250ms;
+}
+
+.customers-section__item:hover{
+    transform: scale(1.04);
 }
 
 .customers-section__item:nth-child(6) {
@@ -39,12 +44,12 @@
 
 .customers-section__link {
     fill: #AFB1B8;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
+    // transition-property: color, background-color;
+    // transition-duration: 250ms;
+    // transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
-    transition: fill 250ms linear 1000ms, border-color 250ms linear 500ms;
+    transition: fill 500ms linear 500ms, border-color 500ms linear 500ms;
 }
 
 .customers-section__item:hover .customers-section__link {

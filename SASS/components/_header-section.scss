@@ -1,9 +1,3 @@
-.header-section .container {
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-
 .header-section {
     /* width: 100%;
     position: fixed;
@@ -11,6 +5,12 @@
     top: 0;
     left: 0; */
     position: relative;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
 }
 
 .header-section__nav {
@@ -24,44 +24,45 @@
 .header-section__nav-item {
     margin-left: 55px;
     position: relative;
-}
 
-.header-section__nav-item:nth-child(1) {
-    margin-left: 0;
-}
+    &:nth-child(1) {
+        margin-left: 0;
+    }
 
-.header-section__nav-item::after {
-    content: "";
-    border-bottom: 4px solid #2196F3;
-    border-radius: 2px;
-    display: block;
-    position: absolute;
-    bottom: -32px;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
-}
+    &::after {
+        content: "";
+        border-bottom: 4px solid $accent;
+        border-radius: 2px;
+        display: block;
+        position: absolute;
+        bottom: -32px;
+        right: 0;
+        width: 100%;
+        height: 4px;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
+    }
 
-.header-section__nav-item:hover::after {
-    opacity: 1;
-    transform: scale(1);
+    &:hover::after {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header-section__nav-link {
-    font-weight: 500;
-    display: block;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
+    @extend %link-text;
+    color: $text-color;
     cursor: pointer;
+    display: block;
+
+    &:hover {
+        color: $accent;
+    }
 }
 
-.active-page{
-    background-color: #2196F3;
+.active-page {
+    background-color: $accent;
     position: absolute;
     bottom: -32px;
     right: 0;
@@ -71,23 +72,14 @@
 }
 
 .header-section__list {
-    display: flex;
-    margin-left: 93px;
-    align-items: center;
-}
-
-.header-section__nav-link:hover {
-    color: #2196F3;
+    @include center ($align-items:center, $margin-left:93px, $display:flex);
 }
 
 .header-contact__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
+    @extend %link-text;
+    color: $text-color-accent;
     height: 16px;
-    fill: #757575;
+    fill: $text-color-accent;
     align-items: center;
     margin-right: 10px;
     display: flex;
@@ -96,29 +88,27 @@
     transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
-}
 
-.header-contact__link:hover {
-    color: #2196F3;
-}
-
-.header-contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.header-contact__icon:hover .header-contact {
-    fill: #2196F3;
+    &:hover {
+        color: $accent;
+    }
 }
 
 .header-contact {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
+    @include center ($align-items:center, $margin-left:auto, $display:flex);
 
-.header-contact__contact-item:nth-child(2) {
-    margin-left: 50px;
+    &__contact-item:nth-child(2) {
+        margin-left: 50px;
+    }
+
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
+
+        &:hover .header-contact {
+            fill: $accent;
+        }
+    }
 }
 
 .contact-nav {

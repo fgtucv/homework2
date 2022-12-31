@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/index.min.css">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon (4).ico" />
     <title>WebStudio_UA</title>
 </head>
 
@@ -78,30 +78,30 @@
                     <ul class="hero-modal__list">
                         <li class="hero-modal__item">
                             <label for="name" class="hero-modal__text">Ім’я</label>
+                            <input id="name" autofocus required class="hero-modal__edit" type="text">
                             <svg class="hero-modal__icon">
                                 <use href="./symbol-defs.svg#icon-person-black-18dp-1">
 
                                 </use>
                             </svg>
-                            <input id="name" autofocus required class="hero-modal__edit" type="text">
                         </li>
                         <li class="hero-modal__item">
                             <h3 class="hero-modal__text">Телефон</h3>
+                            <input required class="hero-modal__edit" type="text">
                             <svg class="hero-modal__icon">
                                 <use href="./symbol-defs.svg#icon-phone-black-18dp-1">
 
                                 </use>
                             </svg>
-                            <input required class="hero-modal__edit" type="text">
                         </li>
                         <li class="hero-modal__item">
                             <h3 class="hero-modal__text">Пошта</h3>
+                            <input required class="hero-modal__edit" type="text">
                             <svg class="hero-modal__icon">
                                 <use href="./symbol-defs.svg#icon-email-black-18dp-1">
 
                                 </use>
                             </svg>
-                            <input required class="hero-modal__edit" type="text">
                         </li>
                     </ul>
                     <div class="hero-modal__com">
@@ -109,6 +109,9 @@
                         <textarea required placeholder="Введите текст" class="hero-modal__com-edit" name="com" id="com"
                             cols="30" rows="10"></textarea>
                         <input class="hero-modal__com-check" type="checkbox">
+                        <!-- <span class="hero-modal__custom-check">
+
+                        </span> -->
                         <p class="hero-modal__com-conditions">Погоджуюсь з розсилкою і приймаю <span
                                 class="hero-modal__conditions-span">Умови договору</span>
                         </p>
@@ -515,6 +518,21 @@
         function logBackdropClick() {
             console.log("Це клік в бекдроп");
         }
+    </script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
     </script>
     <script>
         (() => {

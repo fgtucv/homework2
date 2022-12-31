@@ -1,3 +1,10 @@
+.header-contact__link, .header-section__nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -38,6 +45,18 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+button {
+  -webkit-transition: -webkit-transform 500ms linear 250ms;
+  transition: -webkit-transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .logo {
@@ -81,8 +100,8 @@ body {
   font: inherit;
   cursor: pointer;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms linear 250ms, fill 250ms linear 250ms;
-  transition: background-color 250ms linear 250ms, fill 250ms linear 250ms;
+  -webkit-transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
+  transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
 }
 
 .socials-list__item--grey {
@@ -90,7 +109,7 @@ body {
 }
 
 .socials-list__item:hover .socials-list__icon {
-  fill: white;
+  fill: rgb(255, 255, 255);
 }
 
 .socials-list__item:hover {
@@ -123,6 +142,14 @@ body {
   fill: white;
 }
 
+.header-section {
+  /* width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0; */
+  position: relative;
+}
 .header-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,15 +158,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-}
-
-.header-section {
-  /* width: 100%;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  left: 0; */
-  position: relative;
 }
 
 .header-section__nav {
@@ -158,11 +176,9 @@ body {
   margin-left: 55px;
   position: relative;
 }
-
 .header-section__nav-item:nth-child(1) {
   margin-left: 0;
 }
-
 .header-section__nav-item::after {
   content: "";
   border-bottom: 4px solid #2196F3;
@@ -181,7 +197,6 @@ body {
   transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms, transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
   transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms, transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms, -webkit-transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
 }
-
 .header-section__nav-item:hover::after {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -189,13 +204,12 @@ body {
 }
 
 .header-section__nav-link {
-  font-weight: 500;
-  display: block;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #212121;
   cursor: pointer;
+  display: block;
+}
+.header-section__nav-link:hover {
+  color: #2196F3;
 }
 
 .active-page {
@@ -218,15 +232,7 @@ body {
           align-items: center;
 }
 
-.header-section__nav-link:hover {
-  color: #2196F3;
-}
-
 .header-contact__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #757575;
   height: 16px;
   fill: #757575;
@@ -246,18 +252,8 @@ body {
   font: inherit;
   cursor: pointer;
 }
-
 .header-contact__link:hover {
   color: #2196F3;
-}
-
-.header-contact__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.header-contact__icon:hover .header-contact {
-  fill: #2196F3;
 }
 
 .header-contact {
@@ -269,9 +265,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header-contact__contact-item:nth-child(2) {
   margin-left: 50px;
+}
+.header-contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header-contact__icon:hover .header-contact {
+  fill: #2196F3;
 }
 
 .contact-nav {
@@ -547,6 +549,15 @@ body {
   display: flex;
   padding-left: 28px;
   position: relative;
+  -webkit-transition: -webkit-transform 500ms linear 250ms;
+  transition: -webkit-transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
+}
+
+.subscribe-section__button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .subscribe-section__icon {
@@ -574,4 +585,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+.qr-img {
+  margin-left: 70px;
 }/*# sourceMappingURL=portfolio.css.map */

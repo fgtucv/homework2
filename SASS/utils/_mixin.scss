@@ -1,0 +1,5 @@
+@mixin center ($align-items, $margin-left, $display){
+    align-items: $align-items;
+    display: $display;
+    margin-left: $margin-left;
+}

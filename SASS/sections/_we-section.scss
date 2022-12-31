@@ -1,6 +1,6 @@
 /* we */
 .we-section {
-    background: #F5F4FA;
+    background: $background-color;
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -16,7 +16,7 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $text-color;
     margin-bottom: 50px;
 }
 
@@ -27,6 +27,11 @@
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
     padding-bottom: 30px;
+    transition: transform 500ms linear 250ms;
+}
+
+.we-section__card:hover{
+    transform: scale(1.05);
 }
 
 .we-section__card:nth-child(1) {
@@ -44,7 +49,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $text-color;
     margin-bottom: 10px;
 }
 
@@ -54,6 +59,6 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $text-color-accent;
     margin-bottom: 16px;
 }

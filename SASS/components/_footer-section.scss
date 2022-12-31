@@ -5,7 +5,7 @@
 }
 
 .footer-section {
-    background-color: #2F303A;
+    background-color: $footer-background;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -108,6 +108,11 @@
     display: flex;
     padding-left: 28px;
     position: relative;
+    transition: transform 500ms linear 250ms;
+}
+
+.subscribe-section__button:hover{
+    transform: scale(1.03);
 }
 
 .subscribe-section__icon {
@@ -130,4 +135,9 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+
+// qr
+.qr-img{
+    margin-left: 70px;
 }
