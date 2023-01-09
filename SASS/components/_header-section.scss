@@ -72,7 +72,7 @@
 }
 
 .header-section__list {
-    @include center ($align-items:center, $margin-left:93px, $display:flex);
+    @include center($align-items:center, $margin-left:93px, $display:flex)
 }
 
 .header-contact__link {
@@ -95,7 +95,7 @@
 }
 
 .header-contact {
-    @include center ($align-items:center, $margin-left:auto, $display:flex);
+    @include center($align-items:center, $margin-left:auto, $display:flex);
 
     &__contact-item:nth-child(2) {
         margin-left: 50px;

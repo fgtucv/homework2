@@ -3,3 +3,8 @@
     display: $display;
     margin-left: $margin-left;
 }
+
+@mixin border ($with, $type, $color, $radius ){
+    border:$with $type $color;
+    border-radius: $radius;
+}  
