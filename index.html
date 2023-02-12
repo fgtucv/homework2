@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/index.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon (4).ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>WebStudio_UA</title>
 </head>
 
@@ -122,7 +123,7 @@
             </div>
         </section>
         <!-- ЧОМУ МИ -->
-        <section class="benefits-section">
+        <section data-aos="fade-up" class="benefits-section">
             <div class="container">
                 <h2 hidden>ЧОМУ МИ</h2>
                 <ul class="benefits-section__list">
@@ -157,8 +158,8 @@
         <!-- Чим ми займаємось -->
         <section class="work-section">
             <div class="container">
-                <h2 class="work-section__title">Чим ми займаємось</h2>
-                <ul class="work-section__list">
+                <h2 data-aos="fade-down" class="work-section__title">Чим ми займаємось</h2>
+                <ul data-aos="zoom-in-up" class="work-section__list">
                     <li class="work-section__item">
                         <img src="./images/DESKTOPAP-PLICATIONS.png" alt="0">
                         <h3 class="work-section__information">ДЕСКТОПНІ ЗАСТОСУНКИ</h3>
@@ -177,8 +178,8 @@
         <!-- ми -->
         <section class="we-section">
             <div class="container">
-                <h2 class="we-section__title">Наша команда</h2>
-                <ul class="we-section__list">
+                <h2 data-aos="fade-down" class="we-section__title">Наша команда</h2>
+                <ul data-aos="fade-down-left" class="we-section__list">
                     <li class="we-section__card">
                         <img class="we-section__img" src="./images/employee-igor.jpg" alt="Ігор Дем’яненко">
                         <h3 class="we-section__name">Ігор Дем’яненко</h3>
@@ -365,8 +366,8 @@
         <!-- customers -->
         <section class="customers-section">
             <div class="container">
-                <h2 class="customers-section__title">Постійні клієнти</h2>
-                <ul class="customers-section__list">
+                <h2 data-aos="fade-down" class="customers-section__title">Постійні клієнти</h2>
+                <ul data-aos="flip-left" class="customers-section__list">
                     <li class="customers-section__item">
                         <a class="customers-section__link" href="#!">
                             <svg class="customers-section__icon" height="90px" width="170px">
@@ -426,7 +427,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer-section">
+    <footer data-aos="flip-down" class="footer-section">
         <div class="container">
             <div>
                 <a class="logo" href="/">Web<span class="logo__color logo__color--white">Studio</span></a>
@@ -497,7 +498,7 @@
                     </button>
                 </div>
             </div>
-            <img class="qr-img" width="130" height="130" src="./images/qr-code.png" alt="">
+            <img data-aos="zoom-out" class="qr-img" width="130" height="130" src="./images/qr-code.png" alt="">
         </div>
     </footer>
     <script>
@@ -550,6 +551,10 @@
                 });
         })();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
