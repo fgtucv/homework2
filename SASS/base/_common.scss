@@ -4,18 +4,59 @@ body {
     /* padding-top: 100px; */
 }
 
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 button{
     transition: transform 500ms linear 250ms;
 }
 
 button:hover{
     transform: scale(1.05);
+}
+
+.scroll-to-top{
+    width: 81px;
+    height: 81px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #212121;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .container {
+        width: 758px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width:480px){
+    .container {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

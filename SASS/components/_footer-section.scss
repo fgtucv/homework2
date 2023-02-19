@@ -121,15 +121,15 @@
     position: absolute;
     right: 18px;
     top: 26px;
-}    bottom: 13px;
-    : translate(-50%, -50%);
+    bottom: 13px;
+    transform: translate(-50%, -50%);
+}    
 
-transform
 .subscribe-section__text {
-    font-style: n700;
+    font-style: 700;
     font-size: 16px;
-    line-height: 30pxormal;
-    font-weight: ;
+    line-height: 30px;
+    // font-weight: ;
     display: flex;
     align-items: center;
     text-align: center;

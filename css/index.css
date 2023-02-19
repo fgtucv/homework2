@@ -1,3 +1,93 @@
+@-webkit-keyframes to-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes to-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes to-left {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes to-left {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes to-bottom {
+  0% {
+    -webkit-transform: translateY(-100px) scale(0.5);
+            transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes to-bottom {
+  0% {
+    -webkit-transform: translateY(-100px) scale(0.5);
+            transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
 .header-contact__link, .header-section__nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -57,6 +147,30 @@ button {
 button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.scroll-to-top {
+  width: 81px;
+  height: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  background-color: #212121;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .logo {
@@ -207,6 +321,8 @@ button:hover {
   color: #212121;
   cursor: pointer;
   display: block;
+  -webkit-animation: to-top 1s ease-out 200ms both;
+          animation: to-top 1s ease-out 200ms both;
 }
 .header-section__nav-link:hover {
   color: #2196F3;
@@ -301,6 +417,8 @@ button:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+  -webkit-animation: to-bottom 1s ease-out 200ms both;
+          animation: to-bottom 1s ease-out 200ms both;
 }
 
 .hero-section__button {
@@ -318,6 +436,8 @@ button:hover {
   padding-right: 24px;
   padding-bottom: 10px;
   padding-top: 10px;
+  -webkit-animation: to-left 1s ease-out 200ms both;
+          animation: to-left 1s ease-out 200ms both;
 }
 
 .hero-modal {
@@ -940,8 +1060,7 @@ button:hover {
 }
 
 .subscribe-section__text {
-  font-style: normal;
-  font-weight: 700;
+  font-style: 700;
   font-size: 16px;
   line-height: 30px;
   display: -webkit-box;

@@ -59,6 +59,30 @@ button:hover {
           transform: scale(1.05);
 }
 
+.scroll-to-top {
+  width: 81px;
+  height: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  background-color: #212121;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -207,6 +231,8 @@ button:hover {
   color: #212121;
   cursor: pointer;
   display: block;
+  -webkit-animation: to-top 1s ease-out 200ms both;
+          animation: to-top 1s ease-out 200ms both;
 }
 .header-section__nav-link:hover {
   color: #2196F3;
@@ -574,8 +600,7 @@ button:hover {
 }
 
 .subscribe-section__text {
-  font-style: normal;
-  font-weight: 700;
+  font-style: 700;
   font-size: 16px;
   line-height: 30px;
   display: -webkit-box;

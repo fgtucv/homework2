@@ -29,12 +29,12 @@
                         <a target="_blank" class="header-section__nav-link" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="header-section__nav-item">
-                        <a target="_blank" class="header-section__nav-link" href="./contacts.html">Контакти</a>
+                        <a class="header-section__nav-link" href="#contacts">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class="header-contact">
-                <li class="header-contact__contact-item">
+                <li class="header-contact__contact-item header-contact__tel">
                     <a target="_blank" class="header-contact__link" href="tel:+380991111111">
                         <svg class="header-contact__icon" width="20px" height="20px">
                             <use href="./symbol-defs.svg#icon-smartphone">
@@ -429,7 +429,7 @@
     <!-- footer -->
     <footer data-aos="flip-down" class="footer-section">
         <div class="container">
-            <div>
+            <div id="contacts">
                 <a class="logo" href="/">Web<span class="logo__color logo__color--white">Studio</span></a>
                 <address class="footer-section__addres">м. Київ, пр-т Лесі Українки, 26</address>
                 <ul>
@@ -501,6 +501,7 @@
             <img data-aos="zoom-out" class="qr-img" width="130" height="130" src="./images/qr-code.png" alt="">
         </div>
     </footer>
+    <a class="scroll-to-top" href="">scroll to top</a>
     <script>
         const refs = {
             openModalBtn: document.querySelector("[data-open-modal]"),

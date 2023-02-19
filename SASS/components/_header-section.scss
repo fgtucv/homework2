@@ -1,121 +1,130 @@
-.header-section {
-    /* width: 100%;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0; */
-    position: relative;
+@media screen and (min-width:1170px) {
+    .header-section {
+        position: relative;
 
-    & .container {
+        & .container {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+    }
+
+    .header-section__nav {
         display: flex;
+    }
+
+    .nav-list {
         align-items: center;
-        height: 80px;
-    }
-}
-
-.header-section__nav {
-    display: flex;
-}
-
-.nav-list {
-    align-items: center;
-}
-
-.header-section__nav-item {
-    margin-left: 55px;
-    position: relative;
-
-    &:nth-child(1) {
-        margin-left: 0;
     }
 
-    &::after {
-        content: "";
-        border-bottom: 4px solid $accent;
-        border-radius: 2px;
+    .header-section__nav-item {
+        margin-left: 55px;
+        position: relative;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        &::after {
+            content: "";
+            border-bottom: 4px solid $accent;
+            border-radius: 2px;
+            display: block;
+            position: absolute;
+            bottom: -32px;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .header-section__nav-link {
+        @extend %link-text;
+        color: $text-color;
+        cursor: pointer;
         display: block;
+        animation: to-top 1s ease-out 200ms both;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    .active-page {
+        background-color: $accent;
         position: absolute;
         bottom: -32px;
         right: 0;
         width: 100%;
         height: 4px;
-        opacity: 0;
-        transform: scale(0);
-        transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
+        border-radius: 2px;
     }
 
-    &:hover::after {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.header-section__nav-link {
-    @extend %link-text;
-    color: $text-color;
-    cursor: pointer;
-    display: block;
-
-    &:hover {
-        color: $accent;
-    }
-}
-
-.active-page {
-    background-color: $accent;
-    position: absolute;
-    bottom: -32px;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-}
-
-.header-section__list {
-    @include center($align-items:center, $margin-left:93px, $display:flex)
-}
-
-.header-contact__link {
-    @extend %link-text;
-    color: $text-color-accent;
-    height: 16px;
-    fill: $text-color-accent;
-    align-items: center;
-    margin-right: 10px;
-    display: flex;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
-    font: inherit;
-    cursor: pointer;
-
-    &:hover {
-        color: $accent;
-    }
-}
-
-.header-contact {
-    @include center($align-items:center, $margin-left:auto, $display:flex);
-
-    &__contact-item:nth-child(2) {
-        margin-left: 50px;
+    .header-section__list {
+        @include center($align-items: center, $margin-left: 93px, $display: flex)
     }
 
-    &__icon {
-        fill: currentColor;
+    .header-contact__link {
+        @extend %link-text;
+        color: $text-color-accent;
+        height: 16px;
+        fill: $text-color-accent;
+        align-items: center;
         margin-right: 10px;
+        display: flex;
+        transition-property: color, background-color;
+        transition-duration: 250ms;
+        transition-delay: 500ms;
+        font: inherit;
+        cursor: pointer;
 
-        &:hover .header-contact {
-            fill: $accent;
+        &:hover {
+            color: $accent;
         }
     }
+
+    .header-contact {
+        @include center($align-items: center, $margin-left: auto, $display: flex);
+
+        &__contact-item:nth-child(2) {
+            margin-left: 50px;
+        }
+
+        &__icon {
+            fill: currentColor;
+            margin-right: 10px;
+
+            &:hover .header-contact {
+                fill: $accent;
+            }
+        }
+    }
+
+    .contact-nav {
+        position: absolute;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    .contact-information {
+        position: relative;
+    }
 }
 
-.contact-nav {
-    position: absolute;
-    color: rgba(117, 117, 117, 0.5);
-}
+@media screen and (min-width:738px) {
+    .header-section__list {
+        gap: 50px;
+        
+    }
 
-.contact-information {
-    position: relative;
+    .header-contact {
+        display: block;
+    }
 }

@@ -14,6 +14,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    animation: to-bottom 1s ease-out 200ms both;
 
 }
 
@@ -32,6 +33,7 @@
     padding-right: 24px;
     padding-bottom: 10px;
     padding-top: 10px;
+    animation: to-left 1s ease-out 200ms both;
 }
 
 .hero-modal {
