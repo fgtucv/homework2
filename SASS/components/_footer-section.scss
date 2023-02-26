@@ -1,7 +1,11 @@
 /* footer */
 
 .footer-section .container {
-    display: flex;
+        display: flex;
+    @media screen and (min-width:480px) and (max-width:767px) {
+        display: block;
+        text-align: center;
+    }
 }
 
 .footer-section {
@@ -46,6 +50,13 @@
 
 .footer-section__footer-socials {
     margin-left: 70px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 206px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+     }
 }
 
 .footer-section__title {
@@ -62,6 +73,11 @@
 
 .subscribe-section {
     margin-left: 93px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+     }
 }
 
 .subscribe-section__title {
@@ -76,6 +92,11 @@
 
 .subscribe-section__block {
     display: flex;
+    @media screen and (min-width:480px) and (max-width:767px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .subscribe-section__edit {
@@ -109,6 +130,11 @@
     padding-left: 28px;
     position: relative;
     transition: transform 500ms linear 250ms;
+    @media screen and (min-width:480px) and (max-width:767px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
 }
 
 .subscribe-section__button:hover {
@@ -138,6 +164,6 @@
 }
 
 // qr
-.qr-img {
-    margin-left: 70px;
-}
+// .qr-img {
+//     margin-left: 70px;
+// }

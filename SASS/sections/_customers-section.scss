@@ -13,11 +13,27 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $text-color;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        font-size: 28px;
+      }
+  
+      @media screen and (min-width: 768px) and (max-width:1199px){
+        // font-size: 28px;
+      }
 }
 
 .customers-section__list {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        display: flex;
+        flex-wrap: wrap;
+  
+      }
+  
+      @media screen and (min-width: 768px) and (max-width:1199px){
+        // display: block;
+      }
 }
 
 .customers-section__item {
@@ -32,6 +48,14 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: transform 500ms linear 250ms;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        margin-bottom: 30px;
+  
+      }
+  
+      @media screen and (min-width: 768px) and (max-width:1199px){
+        // display: block;
+      }
 }
 
 .customers-section__item:hover{

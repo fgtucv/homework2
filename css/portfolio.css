@@ -1,10 +1,3 @@
-.header-contact__link, .header-section__nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -37,14 +30,6 @@ body {
   font-family: "Roboto";
   font-style: normal;
   /* padding-top: 100px; */
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 button {
@@ -83,6 +68,33 @@ button:hover {
   right: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 758px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -96,9 +108,31 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .logo__color {
   color: #000000;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo__color {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
 
 .logo__color--white {
@@ -167,11 +201,6 @@ button:hover {
 }
 
 .header-section {
-  /* width: 100%;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  left: 0; */
   position: relative;
 }
 .header-section .container {
@@ -228,6 +257,10 @@ button:hover {
 }
 
 .header-section__nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #212121;
   cursor: pointer;
   display: block;
@@ -259,6 +292,10 @@ button:hover {
 }
 
 .header-contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #757575;
   height: 16px;
   fill: #757575;
@@ -461,6 +498,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-section .container {
+    display: block;
+    text-align: center;
+  }
+}
 
 .footer-section {
   background-color: #2F303A;
@@ -505,6 +548,15 @@ button:hover {
 .footer-section__footer-socials {
   margin-left: 70px;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-section__footer-socials {
+    width: 206px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .footer-section__title {
   font-weight: 700;
@@ -519,6 +571,13 @@ button:hover {
 /* subscribe */
 .subscribe-section {
   margin-left: 93px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .subscribe-section {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-section__title {
@@ -535,6 +594,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .subscribe-section__block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-section__edit {
@@ -582,6 +648,13 @@ button:hover {
   transition: transform 500ms linear 250ms;
   transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .subscribe-section__button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
 
 .subscribe-section__button:hover {
   -webkit-transform: scale(1.03);
@@ -612,8 +685,4 @@ button:hover {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-}
-
-.qr-img {
-  margin-left: 70px;
 }/*# sourceMappingURL=portfolio.css.map */

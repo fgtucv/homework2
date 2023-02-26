@@ -8,10 +8,29 @@
     width: 145px;
     height: 31px;
     display: flex;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .logo__color { 
     color: #000000;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+    
+    }
 }
 
 .logo__color--white{
