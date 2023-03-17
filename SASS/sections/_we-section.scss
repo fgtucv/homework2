@@ -1,54 +1,61 @@
 /* we */
 .we-section {
     background: $background-color;
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 .we-section__list {
-    display: flex;
     justify-content: center;
-    @media screen and (min-width: 480px) and (max-width:767px) {
-        display: block;
-      }
-  
-      @media screen and (min-width: 768px) and (max-width:1199px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .we-section__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: $text-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .we-section__card {
-    margin-left: 30px;
-    width: 270px;
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
     padding-bottom: 30px;
     transition: transform 500ms linear 250ms;
-    @media screen and (min-width: 480px) and (max-width:767px) {
-        margin-bottom: 30px;
-        width: 100%;
-  
-      }
-  
-      @media screen and (min-width: 768px) and (max-width:1199px) {
-        margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
         width: 354px;
-      }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
-.we-section__card:hover{
+// .we-section__card:nth-child(2) {}
+
+.we-section__card:hover {
     transform: scale(1.05);
 }
 
@@ -57,15 +64,8 @@
 }
 
 .we-section__img {
-    width: 270px;
+    width: 100%;
     margin-bottom: 20px;
-    @media screen and (min-width: 480px) and (max-width:767px) {
-        width: 100%;
-      }
-  
-      @media screen and (min-width: 768px) and (max-width:1199px) {
-        width: 354px;
-      }
 }
 
 .we-section__name {

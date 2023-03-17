@@ -1,14 +1,11 @@
 .work-section {
-    color: #E5E5E5;
-    text-align: center;
-    @media screen and (min-width: 480px) and (max-width:767px) {
-        display: none;
-  
-      }
-  
-      @media screen and (min-width: 768px) and (max-width:1199px) {
-        display: none;
-      }
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        color: #E5E5E5;
+        text-align: center;
+        display: flex;
+    }
 }
 
 .work-section .container {

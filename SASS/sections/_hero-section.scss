@@ -1,21 +1,34 @@
 .hero-section {
     background-color: #2F303A;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fons.jpg );
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero-section__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
     animation: to-bottom 1s ease-out 200ms both;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
 
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+    }
 }
 
 .hero-section__button {
@@ -34,25 +47,39 @@
     padding-bottom: 10px;
     padding-top: 10px;
     animation: to-left 1s ease-out 200ms both;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .hero-modal {
-    padding-left: 40px;
     transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
-}
-
-
-.hero-modal__block {
     position: absolute;
-    width: 528px;
-    height: 581px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding-top: 40px;
+    z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-height: 581px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 528px;
+    }
+}
+
+
+.hero-modal__form {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
 }
 
 .hero-modal__title {
@@ -95,22 +122,26 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 40%;
-    left: 53.3px;
+    top: 45%;
+    left: 12px;
 }
 
-.hero-modal__edit:hover + .hero-modal__icon{
+.hero-modal__edit:hover+.hero-modal__icon {
     fill: $accent;
 }
 
 .hero-modal__edit {
-    width: 448px;
+    width: 100%;
     height: 40px;
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
     padding-left: 42px;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+    }
 }
 
 .hero-modal__edit:hover {
@@ -125,7 +156,6 @@
 
 .hero-modal__text {
     text-align: left;
-    padding-left: 41px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -135,6 +165,11 @@
     margin-bottom: 4px;
 }
 
+.hero-modal__com {
+    text-align: left;
+}
+
+
 .hero-modal__com-label {
     font-weight: 400;
     font-size: 12px;
@@ -142,9 +177,6 @@
     letter-spacing: 0.01em;
     color: $text-color-accent;
     text-align: left;
-    padding-left: 41px;
-    margin-bottom: 4px;
-    padding-right: 423px;
 }
 
 .com-instruc {
@@ -160,13 +192,18 @@
 
 .hero-modal__com-edit {
     box-sizing: border-box;
-    width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-top: 12px;
     padding-left: 16px;
     resize: none;
+    margin-top: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+    }
 }
 
 .hero-modal__com-edit:hover .com-instruc {
@@ -184,23 +221,22 @@
     background: $text-color;
     width: 16px;
     height: 15px;
-    position: absolute;
-    left: 52px;
-    margin-top: 24px;
     // appearance: none;
     // -moz-appearance:none;
     // -webkit-appearance: none;
-    position: absolute;
 }
 
 .hero-modal__com-conditions {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-left: 8px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $text-color-accent;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .hero-modal__conditions-span {
@@ -252,4 +288,12 @@
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-modal__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }

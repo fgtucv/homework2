@@ -6,8 +6,7 @@
 
 .button-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .button-item {
@@ -33,7 +32,6 @@
     transition-delay: 500ms;
     font: inherit;
     cursor: pointer;
-    /* transition: hover 500ms cubic-bezier(.17, .67, .83, .67) 250ms; */
 }
 
 .main-button:hover {
@@ -45,13 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 }
 
 .main-card {
     width: 370px;
-    margin-right: 30px;
     border: 1px solid #EEEEEE;
-    margin-bottom: 30px;
     padding-bottom: 20px;
     position: relative;
     overflow: hidden;

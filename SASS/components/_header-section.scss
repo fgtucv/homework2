@@ -53,7 +53,7 @@
     color: $text-color;
     cursor: pointer;
     display: block;
-    animation: to-top 1s ease-out 200ms both;
+    // animation: to-top 1s ease-out 200ms both;
 
     &:hover {
         color: $accent;
@@ -71,7 +71,11 @@
 }
 
 .header-section__list {
-    @include center($align-items: center, $margin-left: 93px, $display: flex)
+    @include center($align-items: center, $margin-left: 93px, $display: flex);
+
+    @media screen and (min-width: 320px) and (max-width:767px) {
+        display: none;
+    }
 }
 
 .header-contact__link {
@@ -96,12 +100,16 @@
     }
 }
 
-.header-contact {
-    @include center($align-items: center, $margin-left: auto, $display: flex);
+.header-contact__tel {
+    margin-bottom: 10px;
 
-    &__contact-item:nth-child(2) {
-        margin-left: 50px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
     }
+}
+
+.header-contact {
+    display: none;
 
     &__icon {
         fill: currentColor;
@@ -109,6 +117,19 @@
 
         &:hover .header-contact {
             fill: $accent;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include center($align-items: center, $margin-left: auto, $display: flex);
+
+        &__contact-item:nth-child(2) {
+            margin-left: 50px;
         }
     }
 }
@@ -120,4 +141,128 @@
 
 .contact-information {
     position: relative;
+}
+
+.is-hidden2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    padding-top: 48px;
+    padding-left: 40px;
+    width: 100%;
+    padding-bottom: 48px;
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+
+.modal-open__button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    margin-left: auto;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.modal-open__icon {
+    fill: black;
+    width: 40px;
+    height: 40px;
+}
+
+.modal-list {
+    margin-bottom: 302px;
+}
+
+.modal-item {
+    margin-bottom: 35px;
+}
+
+.modal-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.active-page-modal {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.modal__icon-close {
+    fill: #212121;
+    width: 20px;
+    height: 20px;
+}
+
+.modal__button-close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 100;
+}
+
+.heder-contact-item {
+    margin-bottom: 32px;
+}
+
+.heder-contact-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.heder-contact-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.heder-social-list {
+    display: flex;
+}
+
+.heder-social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
 }
