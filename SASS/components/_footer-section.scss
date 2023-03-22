@@ -60,6 +60,7 @@
         margin-left: 70px;
         margin-top: 0;
         margin-bottom: 0;
+        text-align: left;
     }
 }
 
@@ -130,6 +131,7 @@
     @media screen and (min-width: 1200px) {
         margin-right: 12px;
         margin-bottom: 0;
+        width: 358px;
     }
 }
 
@@ -166,6 +168,7 @@
     top: 26px;
     bottom: 13px;
     transform: translate(-50%, -50%);
+    fill: white;
 }
 
 .subscribe-section__text {

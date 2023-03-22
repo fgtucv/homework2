@@ -7,6 +7,8 @@
 .button-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 48px;
+    justify-content: center;
 }
 
 .button-item {
@@ -20,8 +22,8 @@
 .main-button {
     padding-top: 6px;
     padding-bottom: 6px;
-    padding-left: 23px;
-    padding-right: 24px;
+    padding-left: 22px;
+    padding-right: 22px;
     border: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
@@ -50,7 +52,6 @@
     width: 370px;
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -94,25 +95,14 @@
     margin-top: 30px;
 }
 
-.main-card:hover .description-informatio {
+.main-card:hover .informatio-text {
     opacity: 1;
     // transform: translate(0, 0);
     transform: scale(1) rotate(360deg) translate(0, 0);
 }
 
 .description-informatio {
-    opacity: 0;
-    position: absolute;
-    width: 348px;
-    height: 234px;
-    left: 0px;
-    top: 0px;
-    background: rgba(33, 150, 243, 0.9);
-    padding-left: 24px;
-    padding-top: 63px;
-    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
-    // transform: translate(-100%, -100%);
-    transform: scale(0) rotate(0deg) translate(-100%, -100%);
+    position: relative;
 }
 
 .informatio-text {
@@ -121,4 +111,16 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(33, 150, 243, 0.9);
+    padding-left: 24px;
+    padding-top: 63px;
+    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
+    // transform: translate(-100%, -100%);
+    transform: scale(0) rotate(0deg) translate(-100%, -100%);
 }

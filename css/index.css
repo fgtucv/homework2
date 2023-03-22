@@ -158,27 +158,29 @@ button:hover {
   right: 20px;
 }
 
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 758px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
   }
 }
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -586,6 +588,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .heder-social-link {
@@ -597,19 +601,33 @@ button:hover {
 }
 
 .hero-section {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fons.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fons.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/1x-mobile/hero-fons-mobile@1x.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/1x-mobile/hero-fons-mobile@1x.webp);
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/2x-mobile/hero-fons-mobile@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/2x-mobile/hero-fons-mobile@2x.webp);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/1x-dekstop/hero-fons-dekstop@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1x-dekstop/hero-fons-dekstop@1x.webp);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2x-dekstop/hero-fons-dekstop@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2x-dekstop/hero-fons-dekstop@2x.webp);
   }
 }
 
@@ -619,7 +637,7 @@ button:hover {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-animation: to-bottom 1s ease-out 200ms both;
           animation: to-bottom 1s ease-out 200ms both;
   max-width: 360px;
@@ -683,7 +701,7 @@ button:hover {
 
 .hero-modal__form {
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -706,7 +724,7 @@ button:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 6px;
   padding-left: 6px;
@@ -876,7 +894,10 @@ button:hover {
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* script */
@@ -1330,6 +1351,7 @@ button:hover {
     margin-left: 70px;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1415,6 +1437,7 @@ button:hover {
   .subscribe-section__edit {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
@@ -1462,6 +1485,7 @@ button:hover {
   bottom: 13px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: white;
 }
 
 .subscribe-section__text {

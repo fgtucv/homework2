@@ -68,27 +68,29 @@ button:hover {
   right: 20px;
 }
 
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 758px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
   }
 }
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -496,6 +498,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .heder-social-link {
@@ -518,6 +522,10 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button-item {
@@ -531,8 +539,8 @@ button:hover {
 .main-button {
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 23px;
-  padding-right: 24px;
+  padding-left: 22px;
+  padding-right: 22px;
   border: #F5F4FA;
   border-radius: 4px;
   font-weight: 500;
@@ -569,7 +577,6 @@ button:hover {
   width: 370px;
   border: 1px solid #EEEEEE;
   padding-bottom: 20px;
-  position: relative;
   overflow: hidden;
 }
 
@@ -614,17 +621,26 @@ button:hover {
   margin-top: 30px;
 }
 
-.main-card:hover .description-informatio {
+.main-card:hover .informatio-text {
   opacity: 1;
   -webkit-transform: scale(1) rotate(360deg) translate(0, 0);
           transform: scale(1) rotate(360deg) translate(0, 0);
 }
 
 .description-informatio {
+  position: relative;
+}
+
+.informatio-text {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
   opacity: 0;
   position: absolute;
-  width: 348px;
-  height: 234px;
+  width: 100%;
+  height: 100%;
   left: 0px;
   top: 0px;
   background: rgba(33, 150, 243, 0.9);
@@ -636,14 +652,6 @@ button:hover {
   transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms, transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms, -webkit-transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
   -webkit-transform: scale(0) rotate(0deg) translate(-100%, -100%);
           transform: scale(0) rotate(0deg) translate(-100%, -100%);
-}
-
-.informatio-text {
-  color: white;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -712,6 +720,7 @@ button:hover {
     margin-left: 70px;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -797,6 +806,7 @@ button:hover {
   .subscribe-section__edit {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
@@ -844,6 +854,7 @@ button:hover {
   bottom: 13px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: white;
 }
 
 .subscribe-section__text {

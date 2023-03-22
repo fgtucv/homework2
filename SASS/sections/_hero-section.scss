@@ -1,267 +1,298 @@
 .hero-section {
-    background-color: #2F303A;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fons.jpg );
-    background-position: center;
-    background-size: cover;
+  background-color: #2f303a;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/1x-mobile/hero-fons-mobile@1x.webp);
+  background-position: center;
+  background-size: cover;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/2x-mobile/hero-fons-mobile@2x.webp);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/1x-dekstop/hero-fons-dekstop@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/2x-dekstop/hero-fons-dekstop@2x.webp);
+  }
 }
 
 .hero-section__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    animation: to-bottom 1s ease-out 200ms both;
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  animation: to-bottom 1s ease-out 200ms both;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 1200px) {
-        max-width: 696px;
-        font-size: 44px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+  }
 }
 
 .hero-section__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    /* outline: 2px solid red; */
-    background-color: $accent;
-    color: white;
-    border: $accent;
-    border-radius: 4px;
-    margin-top: 30px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    animation: to-left 1s ease-out 200ms both;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  /* outline: 2px solid red; */
+  background-color: $accent;
+  color: white;
+  border: $accent;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  animation: to-left 1s ease-out 200ms both;
 
-    @media screen and (min-width: 1200px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .hero-modal {
-    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 581px;
-    width: 100%;
+  transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 581px;
+  width: 100%;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 528px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+  }
 }
 
-
 .hero-modal__form {
-    width: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 40px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
 }
 
 .hero-modal__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .hero-modal__close {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding-top: 6px;
-    padding-left: 6px;
-    top: 8px;
-    right: 8px;
-    position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 6px;
+  padding-left: 6px;
+  top: 8px;
+  right: 8px;
+  position: absolute;
 }
 
 .hero-modal__item {
-    position: relative;
+  position: relative;
 }
 
 .hero-modal__close-icon {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .hero-modal__close-icon:hover {
-    fill: $accent;
+  fill: $accent;
 }
 
 .hero-modal__icon {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 45%;
-    left: 12px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 45%;
+  left: 12px;
 }
 
-.hero-modal__edit:hover+.hero-modal__icon {
-    fill: $accent;
+.hero-modal__edit:hover + .hero-modal__icon {
+  fill: $accent;
 }
 
 .hero-modal__edit {
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
 
-    @media screen and (min-width: 768px) {
-        width: 448px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
 }
 
 .hero-modal__edit:hover {
-    border-radius: 4px;
-    border: 1px solid $accent;
-    border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid $accent;
+  border-radius: 4px;
 }
 
 .modal-item:hover .hero-modal__icon {
-    fill: $accent;
+  fill: $accent;
 }
 
 .hero-modal__text {
-    text-align: left;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: $text-color-accent;
-    display: block;
-    margin-bottom: 4px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $text-color-accent;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .hero-modal__com {
-    text-align: left;
+  text-align: left;
 }
 
-
 .hero-modal__com-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: $text-color-accent;
-    text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $text-color-accent;
+  text-align: left;
 }
 
 .com-instruc {
-    position: absolute;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    color: $text-color-accent;
-    top: 313px;
-    left: 57px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: $text-color-accent;
+  top: 313px;
+  left: 57px;
 }
 
 .hero-modal__com-edit {
-    box-sizing: border-box;
-    width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-top: 12px;
-    padding-left: 16px;
-    resize: none;
-    margin-top: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
+  margin-top: 4px;
 
-    @media screen and (min-width: 768px) {
-        width: 448px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
 }
 
 .hero-modal__com-edit:hover .com-instruc {
-    color: $accent;
+  color: $accent;
 }
 
 .hero-modal__com-edit:hover {
-    border: 1px solid $accent;
-    border-radius: 4px;
-    box-sizing: border-box;
+  border: 1px solid $accent;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .hero-modal__com-check {
-    display: flex;
-    background: $text-color;
-    width: 16px;
-    height: 15px;
-    // appearance: none;
-    // -moz-appearance:none;
-    // -webkit-appearance: none;
+  display: flex;
+  background: $text-color;
+  width: 16px;
+  height: 15px;
+  // appearance: none;
+  // -moz-appearance:none;
+  // -webkit-appearance: none;
 }
 
 .hero-modal__com-conditions {
-    margin-left: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: $text-color-accent;
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-color-accent;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .hero-modal__conditions-span {
-    color: $accent;
+  color: $accent;
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero-modal__com-send {
-    width: 200px;
-    height: 50px;
-    background: $accent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+  width: 200px;
+  height: 50px;
+  background: $accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // .hero-modal__custom-check{
@@ -282,18 +313,18 @@
 /* script */
 
 .hero-section__modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-modal__center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }

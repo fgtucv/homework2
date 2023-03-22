@@ -1,304 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio_UA</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon (5).ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- голована -->
     <header class="header-section">
-        <div class="container">
-            <nav class="header-section__nav">
-                <a class="logo" href="/">Web<span class="logo__color">Studio</span></a>
-                <ul class="header-section__list">
-                    <li class="header-section__nav-item">
-                        <a target="_blank" class="header-section__nav-link" href="./">Головна</a>
-                    </li>
-                    <li class="header-section__nav-item">
-                        <a class="header-section__nav-link" href="./portfolio.html">Портфоліо</a>
-                        <div class="active-page"></div>
-                    </li>
-                    <li class="header-section__nav-item">
-                        <a class="header-section__nav-link" href="#contacts">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="header-contact">
-                <li class="header-contact__contact-item">
-                    <a target="_blank" class="header-contact__link" href="tel:+380991111111">
-                        <svg class="header-contact__icon" width="20px" height="20px">
-                            <use href="./symbol-defs.svg#icon-smartphone">
-
-                            </use>
-                        </svg>
-                        <span>+38 099 111 11 11</span>
-                    </a>
-                </li>
-                <li class="header-contact__contact-item">
-                    <a target="_blank" class="header-contact__link" href="mailto:info@example.com">
-                        <svg class="header-contact__icon" width="20px" height="20px">
-                            <use href="./symbol-defs.svg#icon-email">
-
-                            </use>
-                        </svg>
-                        <span>info@example.com</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <nav class="header-section__nav">
+          <a class="logo" href="/"
+            >Web<span class="logo__color">Studio</span></a
+          >
+          <ul class="header-section__list">
+            <li class="header-section__nav-item">
+              <a target="_blank" class="header-section__nav-link" href="./"
+                >Головна</a
+              >
+            </li>
+            <li class="header-section__nav-item">
+              <a class="header-section__nav-link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+              <div class="active-page"></div>
+            </li>
+            <li class="header-section__nav-item">
+              <a class="header-section__nav-link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <li class="header-contact__contact-item">
+            <a
+              target="_blank"
+              class="header-contact__link"
+              href="tel:+380991111111"
+            >
+              <svg class="header-contact__icon" width="20px" height="20px">
+                <use href="./symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 099 111 11 11</span>
+            </a>
+          </li>
+          <li class="header-contact__contact-item">
+            <a
+              target="_blank"
+              class="header-contact__link"
+              href="mailto:info@example.com"
+            >
+              <svg class="header-contact__icon" width="20px" height="20px">
+                <use href="./symbol-defs.svg#icon-email"></use>
+              </svg>
+              <span>info@example.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main-section">
-        <div class="container">
-            <ul class="button-list">
-                <li class="button-item">
-                    <button class="main-button" type="button">Усе</button>
-                </li>
-                <li class="button-item">
-                    <button class="main-button" type="button">Веб-сайти</button>
-                </li>
-                <li class="button-item">
-                    <button class="main-button" type="button">Застосунки</button>
-                </li>
-                <li class="button-item">
-                    <button class="main-button" type="button">Дизайн</button>
-                </li>
-                <li class="button-item">
-                    <button class="main-button" type="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="main-list">
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/Technocrack.png" alt="Технокряк">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Технокряк</h3>
-                        <p class="main-text">Веб-сайт</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/NewOrleansvsGoldenStarposter.png"
-                        alt="Постер New Orlean vs Golden Star">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Постер New Orlean vs Golden Star</h3>
-                        <p class="main-text">Дизайн</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/Seafoodrestaurant.png" alt="Ресторан Seafood">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Ресторан Seafood</h3>
-                        <p class="main-text">Застосунок</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/Projectprime.png" alt="Проект Prime">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Проект Prime</h3>
-                        <p class="main-text">Маркетинг</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/ProectBoxes.png" alt="Проект Boxes">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Проект Boxes</h3>
-                        <p class="main-text">Застосунок</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/InspirationhasnoBorders.png" alt="Inspiration has no Borders">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Inspiration has no Borders</h3>
-                        <p class="main-text">Веб-сайт</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/LimitedEdition.png" alt="">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Видавництво Limited Edition</h3>
-                        <p class="main-text">Дизайн</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/LABproject.png" alt="Проект LAB">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Проект LAB</h3>
-                        <p class="main-text">Маркетинг</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="fade-down" class="main-card">
-                    <img class="main-item" src="./images/GrowingBusiness.png" alt="Growing Business">
-                    <div class="main-descrition">
-                        <h3 class="main-title">Growing Business</h3>
-                        <p class="main-text">Застосунок</p>
-                        <div class="description-informatio">
-                            <p class="informatio-text">
-                                Технокрик це сучасний майданчик <br> поширення коронавірусу.<br>
-                                Компанії використовують цю <br> платформу для цифрового <br> шпигунства та атак на
-                                захищені <br>
-                                сервери конкурентів.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="button-list">
+          <li class="button-item">
+            <button class="main-button" type="button">Усе</button>
+          </li>
+          <li class="button-item">
+            <button class="main-button" type="button">Веб-сайти</button>
+          </li>
+          <li class="button-item">
+            <button class="main-button" type="button">Застосунки</button>
+          </li>
+          <li class="button-item">
+            <button class="main-button" type="button">Дизайн</button>
+          </li>
+          <li class="button-item">
+            <button class="main-button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="main-list">
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Technocrack-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Technocrack-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Technocrack-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Technocrack-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Technocrack-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Technocrack-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Technocrack-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Технокряк</h3>
+              <p class="main-text">Веб-сайт</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/New-Orlean-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/New-Orlean-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/New-Orlean-tablet@1x.webp 1x,
+                    ./images/2x-tablet/New-Orlean-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/New-Orlean-mobile@1x.webp 1x,
+                    ./images/2x-mobile/New-Orlean-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/New-Orlean-mobile@1x.webp"
+                  alt="Постер New Orlean vs Golden Star"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Постер New Orlean vs Golden Star</h3>
+              <p class="main-text">Дизайн</p>
+              <div class="description-informatio">
+                <p class="informatio-text">
+                  Технокрик це сучасний майданчик <br />
+                  поширення коронавірусу.<br />
+                  Компанії використовують цю <br />
+                  платформу для цифрового <br />
+                  шпигунства та атак на захищені <br />
+                  сервери конкурентів.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Seafood-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Seafood-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Seafood-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Seafood-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Seafood-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Seafood-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Seafood-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Ресторан Seafood</h3>
+              <p class="main-text">Застосунок</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Project-Prime-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Project-Prime-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Project-Prime-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Project-Prime-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Project-Prime-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Project-Prime-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Project-Prime-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Проект Prime</h3>
+              <p class="main-text">Маркетинг</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Project-Boxes-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Project-Boxes-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Project-Boxes-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Project-Boxes-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Project-Boxes-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Project-Boxes-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Project-Boxes-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Проект Boxes</h3>
+              <p class="main-text">Застосунок</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Inspiratio-desktop@1x.webp          1x,
+                    ./images/2x-dekstop/Inspiration-Borders-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Inspiration-Borders-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Inspiration-Borders-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Inspiration-Borders-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Inspiration-Borders-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Inspiration-Borders-mobile@1x.jpg"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Inspiration has no Borders</h3>
+              <p class="main-text">Веб-сайт</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Limited-Edition-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Limited-Edition-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Limited-Edition-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Limited-Edition-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Limited-Edition-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Limited-Edition-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Limited-Edition-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Видавництво Limited Edition</h3>
+              <p class="main-text">Дизайн</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Project-LAB-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Project-LAB-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Project-LAB-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Project-LAB-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Project-LAB-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Project-LAB-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Project-LAB-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Проект LAB</h3>
+              <p class="main-text">Маркетинг</p>
+            </div>
+          </li>
+          <li data-aos="fade-down" class="main-card">
+            <div class="description-informatio">
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-dekstop/Growing-Business-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Growing-Business-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-tablet/Growing-Business-tablet@1x.webp 1x,
+                    ./images/2x-tablet/Growing-Business-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/Growing-Business-mobile@1x.webp 1x,
+                    ./images/2x-mobile/Growing-Business-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="we-section__img"
+                  src="./images/1x-mobile/Growing-Business-mobile@1x.webp"
+                  alt="Ігор Дем’яненко"
+                />
+              </picture>
+              <p class="informatio-text">
+                Технокрик це сучасний майданчик <br />
+                поширення коронавірусу.<br />
+                Компанії використовують цю <br />
+                платформу для цифрового <br />
+                шпигунства та атак на захищені <br />
+                сервери конкурентів.
+              </p>
+            </div>
+            <div class="main-descrition">
+              <h3 class="main-title">Growing Business</h3>
+              <p class="main-text">Застосунок</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer data-aos="flip-down" class="footer-section">
-        <div class="container">
-            <div id="contacts">
-                <a data-aos="fade-down" class="logo" href="/">Web<span
-                        class="logo__color logo__color--white">Studio</span></a>
-                <address data-aos="fade-down" class="footer-section__addres">м. Київ, пр-т Лесі Українки, 26</address>
-                <ul>
-                    <li class="footer-section__item">
-                        <a class="footer-section__mail" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="footer-section__item">
-                        <a class="footer-section__tel" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-section__footer-socials">
-                <h2 data-aos="fade-down" class="footer-section__title">Приєднуйтесь</h2>
-                <ul data-aos="fade-down-left" class="socials-list">
-                    <li class="socials-list__item socials-list__item--grey">
-                        <a target="_blank" class="socials-list__link" href="https://www.instagram.com/ ">
-                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
-                                <use href="./symbol-defs.svg#icon-instagram-2">
-
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-list__item socials-list__item--grey">
-                        <a target="_blank" class="socials-list__link" href="https://twitter.com/">
-                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
-                                <use href="./symbol-defs.svg#icon-twitter-1">
-
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-list__item socials-list__item--grey">
-                        <a target="_blank" class="socials-list__link" href="https://www.facebook.com/">
-                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
-                                <use href="./symbol-defs.svg#icon-facebook-1">
-
-                                </use>
-                            </svg>
-                        </a>
-
-                    </li>
-                    <li class="socials-list__item socials-list__item--grey">
-                        <a target="_blank" class="socials-list__link" href="https://linkedin.com/">
-                            <svg class="socials-list__icon socials-list__icon--white" width="20px" height="20px">
-                                <use href="./symbol-defs.svg#icon-linkedin-1">
-
-                                </use>
-                            </svg>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe-section">
-                <h2 class="subscribe-section__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
-                <div class="subscribe-section__block">
-                    <input class="subscribe-section__edit" autofocus placeholder="E-mail" type="text">
-                    <button class="subscribe-section__button">
-                        <span class="subscribe-section__text">Підписатися</span>
-                        <svg class="subscribe-section__icon">
-                            <use href="./symbol-defs.svg#icon-send">
-
-                            </use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+      <div class="container">
+        <div id="contacts">
+          <a data-aos="fade-down" class="logo" href="/"
+            >Web<span class="logo__color logo__color--white">Studio</span></a
+          >
+          <address data-aos="fade-down" class="footer-section__addres">
+            м. Київ, пр-т Лесі Українки, 26
+          </address>
+          <ul>
+            <li class="footer-section__item">
+              <a class="footer-section__mail" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-section__item">
+              <a class="footer-section__tel" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="footer-section__footer-socials">
+          <h2 data-aos="fade-down" class="footer-section__title">
+            Приєднуйтесь
+          </h2>
+          <ul data-aos="fade-down-left" class="socials-list">
+            <li class="socials-list__item socials-list__item--grey">
+              <a
+                target="_blank"
+                class="socials-list__link"
+                href="https://www.instagram.com/ "
+              >
+                <svg
+                  class="socials-list__icon socials-list__icon--white"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--grey">
+              <a
+                target="_blank"
+                class="socials-list__link"
+                href="https://twitter.com/"
+              >
+                <svg
+                  class="socials-list__icon socials-list__icon--white"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--grey">
+              <a
+                target="_blank"
+                class="socials-list__link"
+                href="https://www.facebook.com/"
+              >
+                <svg
+                  class="socials-list__icon socials-list__icon--white"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--grey">
+              <a
+                target="_blank"
+                class="socials-list__link"
+                href="https://linkedin.com/"
+              >
+                <svg
+                  class="socials-list__icon socials-list__icon--white"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-section">
+          <h2 class="subscribe-section__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+          <div class="subscribe-section__block">
+            <input
+              class="subscribe-section__edit"
+              autofocus
+              placeholder="E-mail"
+              type="text"
+            />
+            <button class="subscribe-section__button">
+              <span class="subscribe-section__text">Підписатися</span>
+              <svg class="subscribe-section__icon">
+                <use href="./symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
     <a class="scroll-to-top" href="">scroll to top</a>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
