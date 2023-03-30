@@ -1,126 +1,155 @@
 .main-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid #ececec;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    border-top: 1px solid #ECECEC;
+  }
 }
 
 .button-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  justify-content: left;
+  @media screen and (min-width: 768px) {
     justify-content: center;
+  }
 }
 
 .button-item {
-    margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 
 .button-item:nth-child(1) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .main-button {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
-    border: #F5F4FA;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-delay: 500ms;
-    font: inherit;
-    cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-delay: 500ms;
+  font: inherit;
+  cursor: pointer;
 }
 
 .main-button:hover {
-    background-color: #2196F3;
-    color: white;
+  background-color: #2196f3;
+  color: white;
 }
 
 .main-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
     justify-content: center;
-    gap: 30px;
+  }
 }
 
 .main-card {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 370px;
-    border: 1px solid #EEEEEE;
-    padding-bottom: 20px;
-    overflow: hidden;
+  }
 }
 
 .main-card:hover {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .main-descrition {
-    padding-left: 24px;
+  padding-left: 24px;
 }
 
-.main-card:nth-last-child(-n+3) {
-    margin-bottom: 0;
+.main-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .main-card:nth-child(3n) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .main-item {
-    background: url(portfolio1.jpg);
+  background: url(portfolio1.jpg);
 }
 
 .main-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2px;
-    letter-spacing: 0.06em;
-    color: $text-color;
-    margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+  color: $text-color;
+  margin-top: 20px;
 }
 
 .main-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.85px;
-    letter-spacing: 0.03em;
-    color: $text-color-accent;
-    margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.85px;
+  letter-spacing: 0.03em;
+  color: $text-color-accent;
+  margin-top: 30px;
 }
 
 .main-card:hover .informatio-text {
-    opacity: 1;
-    // transform: translate(0, 0);
-    transform: scale(1) rotate(360deg) translate(0, 0);
+  opacity: 1;
+  // transform: translate(0, 0);
+  transform: scale(1) rotate(360deg) translate(0, 0);
 }
 
 .description-informatio {
-    position: relative;
+  position: relative;
 }
 
 .informatio-text {
-    color: white;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: rgba(33, 150, 243, 0.9);
-    padding-left: 24px;
-    padding-top: 63px;
-    transition: opacity 500ms cubic-bezier(.17, .67, .83, .67) 250ms, transform 500ms cubic-bezier(.17, .67, .83, .67) 250ms;
-    // transform: translate(-100%, -100%);
-    transform: scale(0) rotate(0deg) translate(-100%, -100%);
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(33, 150, 243, 0.9);
+  padding-left: 24px;
+  padding-top: 63px;
+  transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms,
+    transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  // transform: translate(-100%, -100%);
+  transform: scale(0) rotate(0deg) translate(-100%, -100%);
 }

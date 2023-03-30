@@ -6,6 +6,7 @@ ul {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 p {
@@ -24,4 +25,9 @@ h3 {
 
 input{
     margin: 0;
+    outline: none;
+}
+
+button{
+    outline: none;
 }

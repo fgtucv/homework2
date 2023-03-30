@@ -125,7 +125,7 @@
     height: 50px;
     background: #2F303A;
     padding-left: 15px;
-    transition: border 250ms linear 500ms;
+    transition: border 250ms linear 500ms, height 250ms linear 500ms;
     margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
@@ -139,6 +139,7 @@
 .subscribe-section__edit:focus {
     border: solid 1px #2196F3;
     cursor: pointer;
+    height: 70px;
 }
 
 .subscribe-section__button {
@@ -156,7 +157,7 @@
     transition: transform 500ms linear 250ms;
 }
 
-.subscribe-section__button:hover {
+.subscribe-section__button:hover, .subscribe-section__button:focus {
     transform: scale(1.03);
 }
 

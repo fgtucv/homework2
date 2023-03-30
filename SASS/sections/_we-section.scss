@@ -11,10 +11,13 @@
 }
 
 .we-section__list {
-    justify-content: center;
+    justify-content: left;
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
 }
 
 .we-section__title {
@@ -55,7 +58,7 @@
 
 // .we-section__card:nth-child(2) {}
 
-.we-section__card:hover {
+.we-section__card:hover, .we-section__card:focus {
     transform: scale(1.05);
 }
 

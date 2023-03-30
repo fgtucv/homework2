@@ -96,6 +96,7 @@ ul {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 p {
@@ -114,6 +115,11 @@ h3 {
 
 input {
   margin: 0;
+  outline: none;
+}
+
+button {
+  outline: none;
 }
 
 body {
@@ -129,7 +135,7 @@ button {
   transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 
-button:hover {
+button:hover, button:focus {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -241,22 +247,18 @@ button:hover {
   margin-right: 10px;
   width: 44px;
   height: 44px;
-  font: inherit;
-  cursor: pointer;
-  border-radius: 50%;
-  -webkit-transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
-  transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
 }
 
 .socials-list__item--grey {
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
-.socials-list__item:hover .socials-list__icon {
+.socials-list__link:hover .socials-list__icon, .socials-list__link:focus .socials-list__icon {
   fill: rgb(255, 255, 255);
 }
 
-.socials-list__item:hover {
+.socials-list__link:hover, .socials-list__link:focus {
   background-color: #2196F3;
 }
 
@@ -274,6 +276,11 @@ button:hover {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 12px;
+  border-radius: 50%;
+  font: inherit;
+  cursor: pointer;
+  -webkit-transition: background-color 500ms linear 250ms, fill 500ms linear 250ms;
+  transition: background-color 500ms linear 250ms, fill 500ms linear 250ms;
 }
 
 .socials-list__icon {
@@ -444,7 +451,7 @@ button:hover {
     margin-left: auto;
   }
   .header-contact__contact-item:nth-child(2) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -464,15 +471,21 @@ button:hover {
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   padding-top: 48px;
   padding-left: 40px;
   width: 100%;
   padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -511,10 +524,6 @@ button:hover {
   fill: black;
   width: 40px;
   height: 40px;
-}
-
-.modal-list {
-  margin-bottom: 302px;
 }
 
 .modal-item {
@@ -676,17 +685,29 @@ button:hover {
   }
 }
 
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .hero-modal {
   -webkit-transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
   transition: opacity 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
   position: absolute;
-  z-index: 100;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-height: 581px;
   width: 100%;
+  margin-left: auto;
 }
 @media screen and (min-width: 480px) {
   .hero-modal {
@@ -742,7 +763,7 @@ button:hover {
   height: 18px;
 }
 
-.hero-modal__close-icon:hover {
+.hero-modal__close-icon:hover, .hero-modal__close-icon:focus {
   fill: #2196F3;
 }
 
@@ -750,11 +771,11 @@ button:hover {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 12px;
 }
 
-.hero-modal__edit:hover + .hero-modal__icon {
+.hero-modal__edit:hover + .hero-modal__icon, .hero-modal__edit:focus + .hero-modal__icon {
   fill: #2196F3;
 }
 
@@ -767,6 +788,7 @@ button:hover {
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .hero-modal__edit {
@@ -774,7 +796,7 @@ button:hover {
   }
 }
 
-.hero-modal__edit:hover {
+.hero-modal__edit:hover, .hero-modal__edit:focus {
   border-radius: 4px;
   border: 1px solid #2196F3;
   border-radius: 4px;
@@ -835,6 +857,41 @@ button:hover {
   .hero-modal__com-edit {
     width: 448px;
   }
+}
+
+.hero-modal__com-edit::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-modal__com-edit::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-modal__com-edit:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-modal__com-edit::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-modal__com-edit::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .hero-modal__com-edit:hover .com-instruc {
@@ -973,6 +1030,7 @@ button:hover {
   padding-top: 27px;
   width: 370px;
   bottom: 0;
+  left: 0;
 }
 
 .work-section__item:nth-child(1) {
@@ -1095,15 +1153,22 @@ button:hover {
 }
 
 .we-section__list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .we-section__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .we-section__title {
@@ -1150,7 +1215,7 @@ button:hover {
   }
 }
 
-.we-section__card:hover {
+.we-section__card:hover, .we-section__card:focus {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -1234,17 +1299,6 @@ button:hover {
 }
 
 .customers-section__item {
-  color: #757575;
-  font: inherit;
-  cursor: pointer;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  -webkit-transition: -webkit-transform 500ms linear 250ms;
-  transition: -webkit-transform 500ms linear 250ms;
-  transition: transform 500ms linear 250ms;
-  transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
   width: 210px;
 }
 @media screen and (min-width: 768px) {
@@ -1258,7 +1312,7 @@ button:hover {
   }
 }
 
-.customers-section__item:hover {
+.customers-section__link:hover, .customers-section__link:focus {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
 }
@@ -1275,13 +1329,23 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font: inherit;
+  cursor: pointer;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform 500ms linear 250ms;
+  transition: -webkit-transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms;
+  transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 
-.customers-section__item:hover .customers-section__link {
+.customers-section__link:hover, .customers-section__link:focus {
   fill: #2196F3;
 }
 
-.customers-section__item:hover {
+.customers-section__link:hover, .customers-section__link:focus {
   border: 1px solid #2196F3;
 }
 
@@ -1429,8 +1493,8 @@ button:hover {
   height: 50px;
   background: #2F303A;
   padding-left: 15px;
-  -webkit-transition: border 250ms linear 500ms;
-  transition: border 250ms linear 500ms;
+  -webkit-transition: border 250ms linear 500ms, height 250ms linear 500ms;
+  transition: border 250ms linear 500ms, height 250ms linear 500ms;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -1445,6 +1509,7 @@ button:hover {
 .subscribe-section__edit:focus {
   border: solid 1px #2196F3;
   cursor: pointer;
+  height: 70px;
 }
 
 .subscribe-section__button {
@@ -1471,7 +1536,7 @@ button:hover {
   transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 
-.subscribe-section__button:hover {
+.subscribe-section__button:hover, .subscribe-section__button:focus {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }

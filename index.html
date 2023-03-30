@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/index.min.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon (4).ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>WebStudio_UA</title>
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon (4).ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>WebStudio_UA</title>
+    <link rel="stylesheet" href="./css/index.min.css" />
   </head>
 
   <body>
@@ -89,75 +89,79 @@
         <button class="hero-section__button" type="button" data-open-modal>
           Замовити послугу
         </button>
-        <div class="hero-modal is-hidden" data-backdrop>
-          <form class="hero-modal__form">
-            <h2 class="hero-modal__title">
-              Залиште свої дані, ми Вам зателефонуємо
-            </h2>
-            <button data-close-modal class="hero-modal__close" type="button">
-              <svg class="hero-modal__close-icon">
-                <use href="./symbol-defs.svg#icon-close-black-18dp-2-1"></use>
-              </svg>
-            </button>
-            <ul class="hero-modal__list">
-              <li class="hero-modal__item">
-                <label for="name" class="hero-modal__text">Ім’я</label>
-                <input
-                  id="name"
-                  autofocus
-                  required
-                  class="hero-modal__edit"
-                  type="text"
-                />
-                <svg class="hero-modal__icon">
-                  <use href="./symbol-defs.svg#icon-person-black-18dp-1"></use>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="hero-modal">
+            <form class="hero-modal__form">
+              <h2 class="hero-modal__title">
+                Залиште свої дані, ми Вам зателефонуємо
+              </h2>
+              <button data-close-modal class="hero-modal__close" type="button">
+                <svg class="hero-modal__close-icon">
+                  <use href="./symbol-defs.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
-              </li>
-              <li class="hero-modal__item">
-                <h3 class="hero-modal__text">Телефон</h3>
-                <input required class="hero-modal__edit" type="text" />
-                <svg class="hero-modal__icon">
-                  <use href="./symbol-defs.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-              </li>
-              <li class="hero-modal__item">
-                <h3 class="hero-modal__text">Пошта</h3>
-                <input required class="hero-modal__edit" type="text" />
-                <svg class="hero-modal__icon">
-                  <use href="./symbol-defs.svg#icon-email-black-18dp-1"></use>
-                </svg>
-              </li>
-            </ul>
-            <div class="hero-modal__com">
-              <label class="hero-modal__com-label" for="com">Коментарі</label>
-              <textarea
-                required
-                placeholder="Введите текст"
-                class="hero-modal__com-edit"
-                name="com"
-                id="com"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <div class="hero-modal__center">
-                <input class="hero-modal__com-check" type="checkbox" />
-                <p class="hero-modal__com-conditions">
-                  Погоджуюсь з розсилкою і приймаю
-                  <span class="hero-modal__conditions-span"
-                    >Умови договору</span
-                  >
-                </p>
-              </div>
-
-              <button
-                type="submit"
-                data-close-modal
-                class="hero-modal__com-send"
-              >
-                Надіслати
               </button>
-            </div>
-          </form>
+              <ul class="hero-modal__list">
+                <li class="hero-modal__item">
+                  <label for="name" class="hero-modal__text">Ім’я</label>
+                  <input
+                    id="name"
+                    autofocus
+                    required
+                    class="hero-modal__edit"
+                    type="text"
+                  />
+                  <svg class="hero-modal__icon">
+                    <use
+                      href="./symbol-defs.svg#icon-person-black-18dp-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="hero-modal__item">
+                  <h3 class="hero-modal__text">Телефон</h3>
+                  <input required class="hero-modal__edit" type="text" />
+                  <svg class="hero-modal__icon">
+                    <use href="./symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+                </li>
+                <li class="hero-modal__item">
+                  <h3 class="hero-modal__text">Пошта</h3>
+                  <input required class="hero-modal__edit" type="text" />
+                  <svg class="hero-modal__icon">
+                    <use href="./symbol-defs.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+                </li>
+              </ul>
+              <div class="hero-modal__com">
+                <label class="hero-modal__com-label" for="com">Коментарі</label>
+                <textarea 
+                  required
+                  placeholder="Введіть текст"
+                  class="hero-modal__com-edit"
+                  name="com"
+                  id="com"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="hero-modal__center">
+                  <input class="hero-modal__com-check" type="checkbox" />
+                  <p class="hero-modal__com-conditions">
+                    Погоджуюсь з розсилкою і приймаю
+                    <span class="hero-modal__conditions-span"
+                      >Умови договору</span
+                    >
+                  </p>
+                </div>
+
+                <button
+                  type="submit"
+                  data-close-modal
+                  class="hero-modal__com-send"
+                >
+                  Надіслати
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- ЧОМУ МИ -->
@@ -207,13 +211,12 @@
               <picture>
                 <source
                   srcset="
-                  ./images/2x-dekstop/DESKTOPAP-PLICATIONSdekstop@2x.webp 2x,
-                  ./images/1x-dekstop/DESKTOPAP-PLICATIONSdekstop@1x.webp 1x
+                    ./images/2x-dekstop/DESKTOPAP-PLICATIONS-dekstop@2x.webp 2x,
+                    ./images/1x-dekstop/DESKTOPAP-PLICATIONSdekstop@1x.webp  1x
                   "
                   media="(min-width: 1200px)"
                 />
-                <img
-                  class="we-section__img"
+                <img   
                   src="./images/1x-dekstop/DESKTOPAP-PLICATIONSdekstop@1x.webp"
                   alt=""
                 />
@@ -224,14 +227,13 @@
               <picture>
                 <source
                   srcset="
-                  ./images/2x-dekstop/MOBILEAPP-LICATIONSz-dekstop@2x.webp 2x,
-                  ./images/1x-dekstop/MOBILEAPP-LICATIONSz-dekstop@1x.webp 1x
+                    ./images/2x-dekstop/MOBILEAPP-LICATIONS-dekstop@2x.webp 2x,
+                    ./images/1x-dekstop/MOBILEAPP-LICATIONS-dekstop@1x.webp 1x
                   "
                   media="(min-width: 1200px)"
                 />
-                <img
-                  class="we-section__img"
-                  src="./images/1x-dekstop/MOBILEAPP-LICATIONSz-dekstop@1x.webp"
+                <img     
+                  src="./images/1x-dekstop/MOBILEAPP-LICATIONS-dekstop@1x.webp"
                   alt=""
                 />
               </picture>
@@ -241,13 +243,13 @@
               <picture>
                 <source
                   srcset="
-                  ./images/2x-dekstop/DESIGN-SOLUTIONS-dekstop@2x.webp 2x,
-                  ./images/1x-dekstop/DESIGN-SOLUTIONS-dekstop@1x.webp 1x
+                    ./images/2x-dekstop/DESIGN-SOLUTIONS-dekstop@2x.webp 2x,
+                    ./images/1x-dekstop/DESIGN-SOLUTIONS-dekstop@1x.webp 1x
                   "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  class="we-section__img"
+                  
                   src="./images/1x-dekstop/DESIGN-SOLUTIONS-dekstop@1x.webp"
                   alt=""
                 />
@@ -261,13 +263,20 @@
       <section class="we-section">
         <div class="container">
           <h2 data-aos="fade-down" class="we-section__title">Наша команда</h2>
-          <ul data-aos="fade-down-left" class="we-section__list">
+          <ul data-aos="fade-down" class="we-section__list">
             <li class="we-section__card">
               <picture>
                 <source
                   srcset="
                     ./images/1x-dekstop/worker1-desktop@1x.webp 1x,
                     ./images/2x-dekstop/worker1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-dekstop/worker1-desktop@1x.jpg 1x,
+                    ./images/2x-dekstop/worker1-desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -280,8 +289,22 @@
                 />
                 <source
                   srcset="
+                    ./images/1x-tablet/worker1-tablet@1x.jpg 1x,
+                    ./images/2x-tablet/worker1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
                     ./images/1x-mobile/worker1-mobile@1x.webp 1x,
                     ./images/2x-mobile/worker1-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x-mobile/worker1-mobile@1x.jpg 1x,
+                    ./images/2x-mobile/worker1-mobile@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -359,7 +382,7 @@
                 <source
                   srcset="
                     ./images/1x-mobile/worker2-mobile@1x.webp 1x,
-                    ./images/2x-mobile/worker2-mobile@2x.webp 2x
+                    ./images/2x-mobile/worker2-mobile@2x.jpg  2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -659,7 +682,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer data-aos="flip-down" class="footer-section">
+    <footer class="footer-section">
       <div class="container">
         <div class="contacts-div" id="contacts">
           <a class="logo" href="/"
@@ -784,7 +807,8 @@
           <a class="modal-link" href="#workers">Контакти</a>
         </li>
       </ul>
-      <ul class="heder-contact-list">
+      <div>
+        <ul class="heder-contact-list">
         <li class="heder-contact-item">
           <a class="heder-contact-tel" href="#">+38 096 111 11 11</a>
         </li>
@@ -817,6 +841,8 @@
           >
         </li>
       </ul>
+      </div>
+      
     </div>
     <script src="./js/header-modal.js"></script>
     <script src="./js/hero-modal.js"></script>

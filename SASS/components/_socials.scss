@@ -8,21 +8,18 @@
     margin-right: 10px;
     width: 44px;
     height: 44px;
-    font: inherit;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
 }
 
 .socials-list__item--grey {
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
-.socials-list__item:hover .socials-list__icon {
+.socials-list__link:hover .socials-list__icon, .socials-list__link:focus .socials-list__icon{
     fill: rgb(255, 255, 255);
 }
 
-.socials-list__item:hover {
+.socials-list__link:hover, .socials-list__link:focus {
     background-color: #2196F3;
 }
 
@@ -34,6 +31,10 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
+    border-radius: 50%;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 500ms linear 250ms, fill 500ms linear 250ms;
 }
 
 .socials-list__icon {

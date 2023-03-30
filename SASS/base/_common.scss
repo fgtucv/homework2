@@ -8,7 +8,7 @@ button {
   transition: transform 500ms linear 250ms;
 }
 
-button:hover {
+button:hover, button:focus {
   transform: scale(1.05);
 }
 

@@ -30,10 +30,13 @@
             <li class="header-section__nav-item">
               <a target="_blank" class="header-section__nav-link" href="./"
                 >Головна</a
-              >
+              >       
             </li>
             <li class="header-section__nav-item">
-              <a class="header-section__nav-link" href="./portfolio.html"
+              <a
+                target="_blank"
+                class="header-section__nav-link"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
               <div class="active-page"></div>
@@ -44,7 +47,7 @@
           </ul>
         </nav>
         <ul class="header-contact">
-          <li class="header-contact__contact-item">
+          <li class="header-contact__contact-item header-contact__tel">
             <a
               target="_blank"
               class="header-contact__link"
@@ -69,6 +72,11 @@
             </a>
           </li>
         </ul>
+        <button class="modal-open__button" data-open-modal2>
+          <svg class="modal-open__icon">
+            <use href="./symbol-defs.svg#icon-align-justify"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main-section">
@@ -118,7 +126,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Technocrack-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Технокряк"
                 />
               </picture>
               <p class="informatio-text">
@@ -216,7 +224,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Seafood-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Ресторан Seafood"
                 />
               </picture>
               <p class="informatio-text">
@@ -260,7 +268,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Project-Prime-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Проект Prime"
                 />
               </picture>
               <p class="informatio-text">
@@ -283,13 +291,13 @@
                 <source
                   srcset="
                     ./images/1x-dekstop/Project-Boxes-desktop@1x.webp 1x,
-                    ./images/2x-dekstop/Project-Boxes-desktop@2x.webp 2x
+                    ./images/2x-dekstop/Project-boxes-desktop@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/1x-tablet/Project-Boxes-tablet@1x.webp 1x,
+                    ./images/1x-tablet/Boxes-tablet@1x.webp 1x,
                     ./images/2x-tablet/Project-Boxes-tablet@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -304,7 +312,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Project-Boxes-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Проект Boxes"
                 />
               </picture>
               <p class="informatio-text">
@@ -326,14 +334,14 @@
               <picture>
                 <source
                   srcset="
-                    ./images/1x-dekstop/Inspiratio-desktop@1x.webp          1x,
-                    ./images/2x-dekstop/Inspiration-Borders-desktop@2x.webp 2x
+                    ./images/1x-dekstop/Inspiratio-desktop@1x.webp 1x,
+                    ./images/2x-dekstop/Inspiration-desktop@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/1x-tablet/Inspiration-Borders-tablet@1x.webp 1x,
+                    ./images/1x-tablet/Inspiration-tablet@1x.webp 1x,
                     ./images/2x-tablet/Inspiration-Borders-tablet@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -348,7 +356,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Inspiration-Borders-mobile@1x.jpg"
-                  alt="Ігор Дем’яненко"
+                  alt="Inspiration has no Borders"
                 />
               </picture>
               <p class="informatio-text">
@@ -392,7 +400,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Limited-Edition-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Видавництво Limited Edition"
                 />
               </picture>
               <p class="informatio-text">
@@ -415,7 +423,7 @@
                 <source
                   srcset="
                     ./images/1x-dekstop/Project-LAB-desktop@1x.webp 1x,
-                    ./images/2x-dekstop/Project-LAB-desktop@2x.webp 2x
+                    ./images/2x-dekstop/LAB-project-@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -436,7 +444,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Project-LAB-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Проект LAB"
                 />
               </picture>
               <p class="informatio-text">
@@ -480,7 +488,7 @@
                 <img
                   class="we-section__img"
                   src="./images/1x-mobile/Growing-Business-mobile@1x.webp"
-                  alt="Ігор Дем’яненко"
+                  alt="Growing Business"
                 />
               </picture>
               <p class="informatio-text">
@@ -526,7 +534,7 @@
           <h2 data-aos="fade-down" class="footer-section__title">
             Приєднуйтесь
           </h2>
-          <ul data-aos="fade-down-left" class="socials-list">
+          <ul  class="socials-list">
             <li class="socials-list__item socials-list__item--grey">
               <a
                 target="_blank"
@@ -608,7 +616,7 @@
         </div>
       </div>
     </footer>
-    <a class="scroll-to-top" href="">scroll to top</a>
+    <!-- <a class="scroll-to-top" href="">scroll to top</a> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

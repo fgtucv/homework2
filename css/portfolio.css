@@ -6,6 +6,7 @@ ul {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 p {
@@ -24,6 +25,11 @@ h3 {
 
 input {
   margin: 0;
+  outline: none;
+}
+
+button {
+  outline: none;
 }
 
 body {
@@ -39,7 +45,7 @@ button {
   transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 
-button:hover {
+button:hover, button:focus {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -151,22 +157,18 @@ button:hover {
   margin-right: 10px;
   width: 44px;
   height: 44px;
-  font: inherit;
-  cursor: pointer;
-  border-radius: 50%;
-  -webkit-transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
-  transition: background-color 500ms linear 250ms, fill 550ms linear 500ms;
 }
 
 .socials-list__item--grey {
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
-.socials-list__item:hover .socials-list__icon {
+.socials-list__link:hover .socials-list__icon, .socials-list__link:focus .socials-list__icon {
   fill: rgb(255, 255, 255);
 }
 
-.socials-list__item:hover {
+.socials-list__link:hover, .socials-list__link:focus {
   background-color: #2196F3;
 }
 
@@ -184,6 +186,11 @@ button:hover {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 12px;
+  border-radius: 50%;
+  font: inherit;
+  cursor: pointer;
+  -webkit-transition: background-color 500ms linear 250ms, fill 500ms linear 250ms;
+  transition: background-color 500ms linear 250ms, fill 500ms linear 250ms;
 }
 
 .socials-list__icon {
@@ -354,7 +361,7 @@ button:hover {
     margin-left: auto;
   }
   .header-contact__contact-item:nth-child(2) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -374,15 +381,21 @@ button:hover {
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   padding-top: 48px;
   padding-left: 40px;
   width: 100%;
   padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -421,10 +434,6 @@ button:hover {
   fill: black;
   width: 40px;
   height: 40px;
-}
-
-.modal-list {
-  margin-bottom: 302px;
 }
 
 .modal-item {
@@ -511,9 +520,15 @@ button:hover {
 }
 
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border-top: 1px solid #ECECEC;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid #ececec;
+}
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-list {
@@ -523,13 +538,26 @@ button:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 48px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-item {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .button-item {
+    margin-bottom: 15px;
+  }
 }
 
 .button-item:nth-child(1) {
@@ -541,7 +569,7 @@ button:hover {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  border: #F5F4FA;
+  border: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -557,7 +585,7 @@ button:hover {
 }
 
 .main-button:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: white;
 }
 
@@ -567,22 +595,44 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .main-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-card {
-  width: 370px;
-  border: 1px solid #EEEEEE;
+  width: 100%;
+  border: 1px solid #eeeeee;
   padding-bottom: 20px;
   overflow: hidden;
 }
+@media screen and (min-width: 480px) {
+  .main-card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-card {
+    width: 370px;
+  }
+}
 
 .main-card:hover {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -798,8 +848,8 @@ button:hover {
   height: 50px;
   background: #2F303A;
   padding-left: 15px;
-  -webkit-transition: border 250ms linear 500ms;
-  transition: border 250ms linear 500ms;
+  -webkit-transition: border 250ms linear 500ms, height 250ms linear 500ms;
+  transition: border 250ms linear 500ms, height 250ms linear 500ms;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -814,6 +864,7 @@ button:hover {
 .subscribe-section__edit:focus {
   border: solid 1px #2196F3;
   cursor: pointer;
+  height: 70px;
 }
 
 .subscribe-section__button {
@@ -840,7 +891,7 @@ button:hover {
   transition: transform 500ms linear 250ms, -webkit-transform 500ms linear 250ms;
 }
 
-.subscribe-section__button:hover {
+.subscribe-section__button:hover, .subscribe-section__button:focus {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
