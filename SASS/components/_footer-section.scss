@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .footer-section {
@@ -22,6 +26,13 @@
     margin-bottom: 9px;
     margin-top: 20px;
     text-align: center;
+}
+
+.footer-section__item{
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-section__item:nth-child(1) {

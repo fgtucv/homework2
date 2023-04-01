@@ -105,6 +105,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -211,6 +213,7 @@ button:hover, button:focus {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
   }
 }
 
@@ -476,6 +479,8 @@ button:hover, button:focus {
   padding-left: 40px;
   width: 100%;
   padding-bottom: 48px;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1359,6 +1364,18 @@ button:hover, button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-section .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer-section {
@@ -1377,6 +1394,15 @@ button:hover, button:focus {
   margin-bottom: 9px;
   margin-top: 20px;
   text-align: center;
+}
+
+.footer-section__item {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-section__item {
+    text-align: left;
+  }
 }
 
 .footer-section__item:nth-child(1) {
